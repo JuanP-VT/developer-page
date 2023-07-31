@@ -11,14 +11,14 @@ function TypingAnimation() {
     if (typing.current) {
       const typed = new Typed(typing.current, {
         strings: [
-          "Passionate Web Developer",
-          "Dedicated Self Learner",
-          "Experienced Industrial Engineer",
+          " 🔧 Proven Industrial Engineer 🔧",
+          " 💻 Passionate Web Developer 💻",
+          " 📖 Dedicated Self Learner 📖",
         ], // Speed settings
         startDelay: 300,
-        typeSpeed: 30,
-        backSpeed: 20,
-        backDelay: 400,
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 900,
         loop: true,
       });
 
@@ -30,7 +30,10 @@ function TypingAnimation() {
   }, []);
   return (
     <div>
-      <span ref={typing}></span>
+      <span
+        ref={typing}
+        className="md:text-1xl italic subpixel-antialiased"
+      ></span>
     </div>
   );
 }
