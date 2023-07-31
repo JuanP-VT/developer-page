@@ -1,3 +1,14 @@
+/**
+ * TechStack Component
+ *
+ * A component that displays different technology stacks based on the current layer.
+ *
+ * @typedef {Object} Props
+ * @property {"top" | "mid" | "bot"} currentLayer - The currently active layer (top, mid, or bot).
+ *
+ * @param {Props} props - The component props.
+ * @returns {JSX.Element | null} The JSX element representing the TechStack or null if no valid layer is provided.
+ */
 import TechList from "./TechList";
 
 type Props = {

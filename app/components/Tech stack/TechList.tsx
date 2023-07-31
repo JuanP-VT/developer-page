@@ -1,3 +1,15 @@
+/**
+ * TechList Component
+ *
+ * A component that displays a list of technology icons with a title.
+ *
+ * @typedef {Object} Props
+ * @property {string} title - The title of the TechList.
+ * @property {string[]} techs - An array of technology names to be displayed as icons.
+ *
+ * @param {Props} props - The component props.
+ * @returns {JSX.Element} The JSX element representing the TechList.
+ */
 import TechIcon from "./TechIcon";
 type Props = {
   title: string;

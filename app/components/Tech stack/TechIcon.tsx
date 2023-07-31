@@ -1,3 +1,14 @@
+/**
+ * TechIcon Component
+ *
+ * A reusable component to display a technology icon with its name.
+ * We use https://skillicons.dev/icons to display icons
+ * @typedef {Object} Props
+ * @property {string} name - The name of the technology icon to display.
+ *
+ * @param {Props} props - The component props.
+ * @returns {JSX.Element} The JSX element representing the TechIcon.
+ */
 import Image from "next/image";
 
 type Props = { name: string };

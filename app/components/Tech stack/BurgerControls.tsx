@@ -1,3 +1,14 @@
+/**
+ * BurgerControls Component
+ *
+ * A component that displays burger controls with three layers (top, mid, bot).
+ *
+ * @property {"top" | "mid" | "bot"} currentLayer - The currently active layer (top, mid, or bot).
+ * @property {import("react").Dispatch<import("react").SetStateAction<"top" | "mid" | "bot">>} setCurrentLayer - A React State function to set the currently active layer.
+ *
+ * @param {Props} props - The component props.
+ * @returns {JSX.Element} The JSX element representing the BurgerControls.
+ */
 import { Dispatch, SetStateAction } from "react";
 
 type Props = {
