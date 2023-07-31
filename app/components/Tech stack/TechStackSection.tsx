@@ -10,11 +10,11 @@ function TechStackSection() {
   return (
     <section
       className="relative flex h-screen w-screen flex-col
-      items-center bg-sky-100  "
+      items-center border bg-green-50"
     >
-      <h1 className="mb-10 py-4 text-4xl">My Tech Stack</h1>
-
-      <div className="flex w-screen flex-col sm:flex-row">
+      <p className="pt-20 text-4xl font-medium sm:text-5xl">My Tech Stack</p>
+      <span className="mb-20 ">Click The Hamburger!</span>
+      <div className="flex w-screen flex-col items-center justify-center sm:flex-row md:gap-32">
         <BurgerControls
           setCurrentLayer={setCurrentLayer}
           currentLayer={currentLayer}
