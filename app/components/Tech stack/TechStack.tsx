@@ -1,7 +1,4 @@
-import React from "react";
-import FrontEndStack from "./FrontEndStack";
-import BackEndStack from "./BackEndStack";
-import Tools from "./Tools";
+import TechList from "./TechList";
 
 type Props = {
   currentLayer: "top" | "mid" | "bot";
@@ -9,13 +6,45 @@ type Props = {
 
 function TechStack({ currentLayer }: Props) {
   if (currentLayer === "top") {
-    return <FrontEndStack />;
+    return (
+      <TechList
+        techs={[
+          "javascript",
+          "typescript",
+          "react",
+          "nextjs",
+          "html",
+          "css",
+          "tailwindcss",
+          "sass",
+          "bootstrap",
+        ]}
+        title="Frontend"
+      />
+    );
   }
   if (currentLayer === "mid") {
-    return <BackEndStack />;
+    return (
+      <TechList
+        techs={[
+          "javascript",
+          "typescript",
+          "nodejs",
+          "expressjs",
+          "nextjs",
+          "mongodb",
+        ]}
+        title="Backend"
+      />
+    );
   }
   if (currentLayer === "bot") {
-    return <Tools />;
+    return (
+      <TechList
+        techs={["jest", "git", "github", "vscode", "vercel", "heroku"]}
+        title="Tools"
+      />
+    );
   }
 }
 
