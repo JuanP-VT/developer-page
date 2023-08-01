@@ -23,7 +23,7 @@ function TechIcon({ name }: Props) {
         height={50}
         className="self-center"
       />
-      <p className="mt-2 text-center capitalize">{name}</p>
+      <p className="mt-2 text-center text-sm capitalize sm:text-base">{name}</p>
     </div>
   );
 }
