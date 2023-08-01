@@ -17,14 +17,20 @@ function HighlightCard({
 }: Props) {
   return (
     <div
-      className="flex h-min w-full max-w-6xl flex-col  justify-center rounded-xl border-2 
+      className="flex h-min w-full max-w-6xl flex-col-reverse justify-center rounded-xl border-2
          border-zinc-300 bg-sky-100 pb-5 shadow-md md:flex-row"
     >
-      <div className="mx-1  mt-5 flex items-center justify-center sm:w-128 ">
+      <div className="mx-1 mt-5 flex  flex-col items-center justify-center sm:w-128 ">
         <iframe
           src={videoUrl}
           className="h-80 w-full rounded-md md:mr-10"
         ></iframe>
+        <p className="py-2 pl-2 pr-3  text-sm">
+          I enthusiastically share my motivations behind this project, delve
+          into the technical architecture that powers it, and provide
+          comprehensive explanation of the Apps functionalities. <br />
+          <strong>Spanish / Sub Eng</strong>
+        </p>
       </div>
       <div className="flex flex-col px-2 sm:w-full md:w-128">
         <div className="flex-flex-col px-2">
