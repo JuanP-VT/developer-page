@@ -12,6 +12,7 @@ type Props = {
   backgroundColor: string;
   code: string;
   demo: string;
+  objectives: string[];
 };
 
 function SmallProjectCard({
@@ -22,10 +23,11 @@ function SmallProjectCard({
   backgroundColor,
   code,
   demo,
+  objectives,
 }: Props) {
   return (
     <div
-      className={`flex w-full flex-col justify-center rounded-lg ${backgroundColor} border-2 p-3 shadow-md sm:max-w-md`}
+      className={`flex w-full flex-col items-center rounded-lg ${backgroundColor} border-2 p-3 shadow-md sm:max-w-md`}
     >
       <div className="flex w-full flex-col justify-center ">
         <p className="my-8 text-center text-2xl">{name}</p>
@@ -38,7 +40,9 @@ function SmallProjectCard({
         ></Image>
       </div>
       <div className="flex w-full flex-col sm:px-16">
-        <p className="p-2 py-5 text-center">{description}</p>
+        <p className="flex h-32 items-center p-2 py-5 text-center">
+          {description}
+        </p>
         <p className="p-3 text-center text-xl  font-medium">Technologies</p>
         <div className="grid grid-cols-3 items-center justify-center gap-y-5">
           {techs.map((tech, i) => (
@@ -66,6 +70,16 @@ function SmallProjectCard({
             />
             <p className="flex items-center font-medium">Demo</p>
           </a>
+        </div>
+        <div className="flex flex-col">
+          <p className="font-medium">Focus</p>
+          <ul className="grid max-w-md grid-cols-1   space-y-1  ">
+            {objectives.map((objetive, i) => (
+              <li className="ml-3 mr-2" key={`ft${i}`}>
+                -{objetive}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
