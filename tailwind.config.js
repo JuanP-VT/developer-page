@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        "128":"32rem"
+      },
       animation: {
         blobMorph: "blobMorph 7s ease-in-out infinite",
       },
