@@ -1,6 +1,7 @@
 "use client";
 
 import GreetingsSection from "./components/Greetings/GreetingsSection";
+import ProjectsSection from "./components/Projects/ProjectsSection";
 import TechStackSection from "./components/Tech stack/TechStackSection";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
     <main className="overflow-x-hidden">
       <GreetingsSection />
       <TechStackSection />
+      <ProjectsSection />
     </main>
   );
 }
