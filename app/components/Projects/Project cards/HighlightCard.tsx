@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGit, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+
 import TechIcon from "../../Tech stack/TechIcon";
 export const dynamic = "force-dynamic";
 type Props = {
@@ -6,6 +10,8 @@ type Props = {
   description: string;
   techs: string[];
   featureList: string[];
+  code: string;
+  demo: string;
 };
 
 function HighlightCard({
@@ -14,6 +20,8 @@ function HighlightCard({
   description,
   techs,
   featureList,
+  demo,
+  code,
 }: Props) {
   return (
     <div
@@ -54,6 +62,22 @@ function HighlightCard({
               </li>
             ))}
           </ul>
+        </div>
+        <div className="flex justify-center gap-2 py-10">
+          <a
+            className="flex rounded-lg border-2 border-sky-600 bg-zinc-300 px-5"
+            href={code}
+          >
+            <FontAwesomeIcon icon={faLink} className=" h-8 w-8 p-2" />
+            <p className="flex items-center font-medium">Code</p>
+          </a>
+          <a
+            className="flex rounded-lg border-2  border-sky-600 bg-zinc-300 px-5"
+            href={demo}
+          >
+            <FontAwesomeIcon icon={faGithub} className="h-8 w-8 p-2" />
+            <p className="flex items-center font-medium">Demo</p>
+          </a>
         </div>
       </div>
     </div>
