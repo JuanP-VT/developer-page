@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       width: {
         128: "32rem",
+        270: "70rem",
       },
       height: {
         128: "32rem",

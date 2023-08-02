@@ -10,3 +10,17 @@
 a:hover > svg {
   color: rgb(15, 74, 182);
 }
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #3a3939;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #bce6bc;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #2c2929;
+  border-radius: 5px;
+}
