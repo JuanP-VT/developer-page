@@ -1,5 +1,19 @@
+/**
+ * A video-only card component to showcase a project with a video, its details, and technologies used.
+ *
+ * @component
+ * @param {Object} Props - The props for the SmallVideoOnlyCard component.
+ * @param {string} Props.src - The URL of the video representing the project.
+ * @param {string} Props.name - The name of the project.
+ * @param {string} Props.description - The description of the project.
+ * @param {string[]} Props.techs - An array of strings representing the technologies used in the project.
+ * @param {string} Props.backgroundColor - The background color for the card.
+ * @param {string} Props.code - The URL to the source code of the project.
+ * @param {string} Props.demo - The URL to the demo or live version of the project.
+ * @returns {JSX.Element} The JSX element representing the SmallVideoOnlyCard component.
+ */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGit, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 import TechIcon from "../../Tech stack/TechIcon";

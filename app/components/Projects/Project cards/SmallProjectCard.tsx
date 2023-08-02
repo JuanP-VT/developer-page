@@ -1,3 +1,17 @@
+/**
+ * A project card component to showcase a project with its details, technologies used, and objectives.
+ *
+ * @component
+ * @param {Object} Props - The props for the SmallProjectCard component.
+ * @param {string} Props.src - The URL of the image representing the project.
+ * @param {string} Props.name - The name of the project.
+ * @param {string} Props.description - The description of the project.
+ * @param {string[]} Props.techs - An array of strings representing the technologies used in the project.
+ * @param {string} Props.code - The URL to the source code of the project.
+ * @param {string} Props.demo - The URL to the demo or live version of the project.
+ * @param {string[]} Props.objectives - An array of strings representing the objectives or focus of the project.
+ * @returns {JSX.Element} The JSX element representing the SmallProjectCard component.
+ */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";

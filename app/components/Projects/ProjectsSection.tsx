@@ -1,9 +1,13 @@
+/**
+ * Component representing the projects section of the portfolio.
+ *
+ * @component
+ * @returns {JSX.Element} The JSX element representing the ProjectsSection component.
+ */
 "use client";
-
 import ChronologicalOrdered from "./ChronologicalOrdered";
 import HighlightCard from "./Project cards/HighlightCard";
 import VideoOnlyCardSection from "./VideoOnlyCardSection";
-
 function ProjectsSection() {
   return (
     <section className="flex w-screen flex-col justify-center bg-pink-50 sm:p-10">

@@ -1,3 +1,9 @@
+/**
+ * Component representing a section with video-only project cards for a quick look at the projects.
+ *
+ * @component
+ * @returns {JSX.Element} The JSX element representing the VideoOnlyCardSection component.
+ */
 import SmallVideoOnlyCard from "./Project cards/SmallVideoOnlyCard";
 
 function VideoOnlyCardSection() {

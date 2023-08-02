@@ -1,3 +1,9 @@
+/**
+ * Component to display projects sorted chronologically.
+ *
+ * @component
+ * @returns {JSX.Element} The JSX element representing the ChronologicalOrdered component.
+ */
 import SmallProjectCard from "./Project cards/SmallProjectCard";
 
 function ChronologicalOrdered() {

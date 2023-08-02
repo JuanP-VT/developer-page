@@ -1,3 +1,4 @@
+//List of tailwind utility classes related to background color
 export const list = [
   "bg-zinc-100",
   "bg-slate-100",

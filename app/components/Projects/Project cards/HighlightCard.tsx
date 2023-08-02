@@ -1,3 +1,17 @@
+/**
+ * A card component to highlight project information with video, description, tech stack, and features.
+ *
+ * @component
+ * @param {Object} Props - The props for the HighlightCard component.
+ * @param {string} Props.videoUrl - The URL of the video related to the project.
+ * @param {string} Props.projectName - The name of the project.
+ * @param {string} Props.description - The description of the project.
+ * @param {string[]} Props.techs - An array of strings representing the tech stack used in the project.
+ * @param {string[]} Props.featureList - An array of strings representing the features of the project.
+ * @param {string} Props.code - The URL to the source code of the project.
+ * @param {string} Props.demo - The URL to the demo or live version of the project.
+ * @returns {JSX.Element} The JSX element representing the HighlightCard component.
+ */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
