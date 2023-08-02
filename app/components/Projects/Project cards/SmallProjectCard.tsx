@@ -1,9 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGit, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
-
+import { list } from "./bgList";
 import TechIcon from "../../Tech stack/TechIcon";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 type Props = {
   src: string;
   name: string;
@@ -20,17 +21,31 @@ function SmallProjectCard({
   description,
   name,
   techs,
-  backgroundColor,
   code,
   demo,
   objectives,
 }: Props) {
+  const [currentBg, setCurrentBg] = useState("");
+  useEffect(() => {
+    //Initial load
+    const randomNumber = Math.floor(Math.random() * list.length);
+    setCurrentBg(list[randomNumber]);
+    //set Timer
+    const myInterval = setInterval(() => {
+      const randomNumber = Math.floor(Math.random() * list.length);
+      setCurrentBg(list[randomNumber]);
+    }, 10000);
+    return () => {
+      clearInterval(myInterval);
+    };
+  }, []);
+
   return (
     <div
-      className={`flex w-full flex-col items-center rounded-lg ${backgroundColor} border-2 p-3 shadow-md sm:max-w-md`}
+      className={`flex w-full flex-col items-center rounded-lg ${currentBg} border-2 p-3 shadow-md sm:max-w-md`}
     >
-      <div className="flex w-full flex-col justify-center ">
-        <p className="my-8 text-center text-2xl">{name}</p>
+      <div className="flex w-full flex-col justify-center">
+        <p className="my-8 text-center text-2xl font-medium">{name}</p>
         <Image
           src={src}
           width={1000}
