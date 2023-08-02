@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGit, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 import TechIcon from "../../Tech stack/TechIcon";
@@ -49,7 +49,7 @@ function HighlightCard({
           ))}
         </div>
         <div className="flex flex-col px-2">
-          <h2 className="mb-2 ml-3 mt-5 text-lg font-semibold text-gray-900 ">
+          <h2 className="mb-2 ml-3 mt-10 text-lg font-semibold text-gray-900 ">
             Features
           </h2>
           <ul className="grid max-w-md grid-cols-1   space-y-1  sm:grid-cols-2">

@@ -3,8 +3,8 @@ import SmallProjectCard from "./Project cards/SmallProjectCard";
 function ChronologicalOrdered() {
   return (
     <div className="flex flex-col">
-      <p className="py-5 text-4xl">Sorted Chronologically</p>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+      <p className="px-2 py-10 text-4xl">Projects Sorted Chronologically</p>
+      <div className="grid grid-cols-1 gap-y-14 md:grid-cols-2 xl:grid-cols-3">
         <SmallProjectCard
           name="Landing Page"
           description="Static Page - A common Home Page page found in almost all services"
@@ -55,7 +55,7 @@ function ChronologicalOrdered() {
           code="https://github.com/JuanP-VT/Rock-Paper-Scissors"
           demo="https://juanp-vt.github.io/Rock-Paper-Scissors/"
           objectives={[
-            "Practice new javascript knowledge",
+            "Practice javascript",
             "DOM methods",
             "Create readable/understandable code",
           ]}
@@ -69,7 +69,7 @@ function ChronologicalOrdered() {
           code="https://github.com/JuanP-VT/Tic-tac-toe"
           demo="https://juanp-vt.github.io/Tic-tac-toe/"
           objectives={[
-            "Object Oriented Programming",
+            "Objects",
             "More complex logic",
             "Design Patterns",
             "More DOM Methods",
@@ -87,7 +87,7 @@ function ChronologicalOrdered() {
             "More DOM methods",
             "More complex logic",
             "Event listeners",
-            "Improve styling",
+            "Arrays",
           ]}
         />
         <SmallProjectCard
@@ -129,9 +129,9 @@ function ChronologicalOrdered() {
           code="https://github.com/JuanP-VT/Library"
           demo="https://juanp-vt.github.io/Library/"
           objectives={[
-            "Practice more OOP",
+            "Data Structures",
             "Practice clean code principles",
-            "Get familiar with LocalStorage",
+            "LocalStorage & Session",
           ]}
         />
         <SmallProjectCard
@@ -173,7 +173,12 @@ function ChronologicalOrdered() {
           backgroundColor="bg-red-100"
           code="https://github.com/JuanP-VT/shop-app"
           demo="https://juanp-vt.github.io/shop-app/"
-          objectives={["More Typescript", "React Hooks", "React Router"]}
+          objectives={[
+            "More Typescript",
+            "React Functional Components",
+            "React hooks",
+            "React router",
+          ]}
         />
         <SmallProjectCard
           name="Old Developer Page"
@@ -234,7 +239,7 @@ function ChronologicalOrdered() {
         />
         <SmallProjectCard
           name="Developer Page"
-          description="Showcasing my developer journey"
+          description="My developer journey"
           src="/projects-photos/developer.png"
           techs={["typescript", "react", "tailwindcss", "nextjs", "vercel"]}
           backgroundColor="bg-red-100"
