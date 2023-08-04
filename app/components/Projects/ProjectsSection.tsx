@@ -10,8 +10,11 @@ import HighlightCard from "./Project cards/HighlightCard";
 import VideoOnlyCardSection from "./VideoOnlyCardSection";
 function ProjectsSection() {
   return (
-    <section className="flex w-screen flex-col justify-center bg-pink-50 sm:p-10">
-      <p className=" py-3 text-center text-6xl antialiased sm:text-start ">
+    <section
+      id="Projects"
+      className="flex w-screen flex-col justify-center bg-pink-50 sm:p-10"
+    >
+      <p className=" py-10 text-center text-6xl antialiased sm:text-start ">
         Portfolio 🎨🚀
       </p>
       <p className="py-3  text-4xl italic">🌟Highlights🌟</p>

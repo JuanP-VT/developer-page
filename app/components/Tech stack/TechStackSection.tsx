@@ -18,6 +18,7 @@ function TechStackSection() {
   );
   return (
     <section
+      id="Tech"
       className="relative flex h-screen w-screen flex-col
       items-center border bg-green-50"
     >
