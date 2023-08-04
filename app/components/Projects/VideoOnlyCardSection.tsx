@@ -10,13 +10,13 @@ function VideoOnlyCardSection() {
   return (
     <div className="flex flex-col">
       <p className="p-2 text-2xl">Quick Look 👀</p>
-      <div className="mt-5 grid gap-y-10 rounded-lg border-2 border-zinc-300 bg-cyan-700 shadow-lg sm:p-10 lg:grid-cols-2">
+      <div className="mt-5 grid gap-y-10 rounded-lg border-2 border-zinc-700 bg-slate-900 shadow-xl shadow-slate-800 sm:p-10 lg:grid-cols-2">
         <SmallVideoOnlyCard
           name="Fortnite Shopping Cart App"
           description="Consumes Fortnite Public API to fetch current items in sale, displays home page , product catalog and shopping cart system"
           src="/video/shopping-app.mp4"
           techs={["typescript", "react", "css", "git"]}
-          backgroundColor="bg-teal-200"
+          backgroundColor="bg-teal-50"
           code="https://github.com/JuanP-VT/shop-app"
           demo="https://juanp-vt.github.io/shop-app"
         />
