@@ -1,3 +1,14 @@
+/**
+ * Represents the "Hobbies" section of the About Me page.
+ *
+ * This component displays information about the developer's hobbies.
+ * It showcases different hobbies, such as coding, playing the guitar, weightlifting, playing videogames,
+ * and love for dogs, along with brief descriptions of each hobby.
+ *
+ * @component
+ *
+ * @returns {JSX.Element} JSX element representing the "Hobbies" section of the About Me page.
+ */
 import HobbyCard from "./HobbyCard";
 
 function Hobbies() {

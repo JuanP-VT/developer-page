@@ -1,3 +1,16 @@
+/**
+ * Represents a card displaying information about a specific hobby.
+ *
+ * This component displays an image related to the hobby along with a brief description.
+ * It is used within the "Hobbies" section of the About Me page.
+ *
+ * @component
+ *
+ * @param {Object} Props - The props for the HobbyCard component.
+ * @param {string} Props.imageSrc - The URL or path of the image representing the hobby.
+ * @param {string} Props.description - A brief description of the hobby.
+ * @returns {JSX.Element} JSX element representing a card displaying information about a specific hobby.
+ */
 import Image from "next/image";
 type Props = {
   imageSrc: string;

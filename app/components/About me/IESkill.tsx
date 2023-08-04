@@ -1,3 +1,18 @@
+/**
+ * Represents a skill card related to my background in Industrial Engineering.
+ *
+ * This component displays an image representing a specific skill, along with its name and a brief description.
+ * The description is hidden by default and appears on hover, providing additional details about the skill.
+ * It used within the "Background" section of the About Me page to showcase skills acquired from Industrial Engineering.
+ *
+ * @component
+ *
+ * @param {Object} Props - The props for the IESkill component.
+ * @param {string} Props.name - The name of the skill.
+ * @param {string} Props.description - A brief description of the skill.
+ * @param {string} Props.imageSrc - The URL or path of the image representing the skill.
+ * @returns {JSX.Element} JSX element representing a skill card related to the developer's background in Industrial Engineering.
+ */
 import Image from "next/image";
 
 type Props = { name: string; description: string; imageSrc: string };

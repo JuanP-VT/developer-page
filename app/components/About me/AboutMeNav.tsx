@@ -1,3 +1,17 @@
+/**
+ * Represents the navigation bar for the About Me section.
+ *
+ * This component is responsible for rendering the navigation bar in the About Me section.
+ * It consists of two buttons to switch between "Hobbies" and "Professional Background" sections.
+ *
+ * @component
+ *
+ * @param {Object} Props - The props for the AboutMeNav component.
+ * @param {React.Dispatch<React.SetStateAction<"hobbies" | "background">>} Props.setCurrentSection - A function to set the current section ("hobbies" or "background").
+ * @param {"hobbies" | "background"} Props.currentSection - The currently selected section ("hobbies" or "background").
+ * @returns {JSX.Element} JSX element representing the navigation bar for the About Me section.
+ */
+
 type Props = {
   setCurrentSection: React.Dispatch<
     React.SetStateAction<"hobbies" | "background">

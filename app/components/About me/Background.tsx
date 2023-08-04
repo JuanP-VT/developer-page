@@ -1,3 +1,15 @@
+/**
+ * Represents the "Background" section of the About Me page.
+ *
+ * This component displays information about the professional background of the developer.
+ * It highlights skills acquired from a previous background in industrial engineering
+ * and explains how those skills are valuable in the field of software development.
+ *
+ * @component
+ *
+ * @returns {JSX.Element} JSX element representing the "Background" section of the About Me page.
+ */
+
 import IESkill from "./IESkill";
 
 function Background() {

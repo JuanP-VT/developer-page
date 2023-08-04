@@ -1,3 +1,13 @@
+/**
+ * Represents the About Me Section component.
+ *
+ * This component is responsible for rendering the About Me section of the application.
+ * It contains a navigation bar to switch between "hobbies" and "background" sections.
+ * The content displayed depends on the value of `currentSection`.
+ *
+ * @component
+ * @returns {JSX.Element} JSX element representing the About Me section.
+ */
 import { useState } from "react";
 import Hobbies from "./Hobbies";
 import AboutMeNav from "./AboutMeNav";
