@@ -3,8 +3,9 @@ import IESkill from "./IESkill";
 function Background() {
   return (
     <div className="flex flex-col sm:p-5">
-      <div className="flex w-full justify-center sm:justify-normal">
-        <p className="max-w-5xl p-2 ">
+      <div className="flex w-full flex-col justify-center sm:justify-normal">
+        <p className="p-2 text-3xl font-medium">Professional Background</p>
+        <p className="max-w-5xl p-2">
           Beyond my programming experience, I bring a unique set of skills to
           the table as a former industrial engineer.
           <br />
@@ -15,6 +16,7 @@ function Background() {
           These qualities complement my passion for software development,
           allowing me to approach challenges with a well-rounded perspective
         </p>
+        <p className="p-1 font-bold">Hover the skill for more detail</p>
       </div>
       <div className="flex flex-col gap-y-5 sm:grid sm:p-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <IESkill
