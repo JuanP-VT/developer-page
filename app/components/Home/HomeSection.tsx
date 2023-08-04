@@ -4,7 +4,7 @@ import TypingAnimation from "./TypingAnimation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-function GreetingsSection() {
+function HomeSection() {
   return (
     <section
       id="Home"
@@ -41,4 +41,4 @@ function GreetingsSection() {
   );
 }
 
-export default GreetingsSection;
+export default HomeSection;
