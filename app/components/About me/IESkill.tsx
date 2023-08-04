@@ -24,7 +24,7 @@ function IESkill({ name, description, imageSrc }: Props) {
       <div className="">
         <div
           data-description={description}
-          className={`inline-block cursor-pointer p-2 text-center after:absolute 
+          className={`inline-block cursor-pointer p-2 text-center font-medium after:absolute 
           after:bottom-0 after:left-0 after:hidden after:w-72 after:rounded-lg after:border-2 
           after:bg-black after:p-5 after:text-13px after:text-white  after:transition-all 
           after:content-[attr(data-description)] hover:after:block`}
