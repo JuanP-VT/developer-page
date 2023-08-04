@@ -7,8 +7,9 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 function GreetingsSection() {
   return (
     <section
+      id="Home"
       className="relative flex h-screen w-screen flex-col
- items-center bg-slate-100 pt-5 sm:flex-row sm:items-start sm:pt-60 "
+      items-center bg-slate-100 pt-5 sm:flex-row sm:items-start sm:pt-60 "
     >
       <div className="relative mt-16 flex w-screen flex-col items-center sm:mt-0 sm:h-screen xl:pl-60">
         <PictureBlob />
