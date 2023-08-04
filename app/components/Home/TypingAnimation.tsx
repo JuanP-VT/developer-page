@@ -16,9 +16,9 @@ function TypingAnimation() {
           " 📖 Dedicated Self Learner 📖",
         ], // Speed settings
         startDelay: 300,
-        typeSpeed: 50,
+        typeSpeed: 40,
         backSpeed: 30,
-        backDelay: 900,
+        backDelay: 1300,
         loop: true,
       });
 
@@ -32,7 +32,7 @@ function TypingAnimation() {
     <div>
       <span
         ref={typing}
-        className="md:text-1xl italic subpixel-antialiased"
+        className="md:text-1xl font-medium italic subpixel-antialiased"
       ></span>
     </div>
   );

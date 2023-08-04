@@ -7,10 +7,6 @@
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
-
-a:hover > svg {
-  color: rgb(15, 74, 182);
-}
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
