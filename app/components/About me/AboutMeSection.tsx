@@ -9,7 +9,10 @@ function AboutMeSection() {
   >("hobbies");
   return (
     <section className="flex-w relative bg-slate-300 pt-20">
-      <AboutMeNav setCurrentSection={setCurrentSection} />
+      <AboutMeNav
+        setCurrentSection={setCurrentSection}
+        currentSection={currentSection}
+      />
       {currentSection === "hobbies" ? <Hobbies /> : <Background />}
     </section>
   );

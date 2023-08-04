@@ -2,19 +2,24 @@ type Props = {
   setCurrentSection: React.Dispatch<
     React.SetStateAction<"hobbies" | "background">
   >;
+  currentSection: "hobbies" | "background";
 };
 
-function AboutMeNav({ setCurrentSection }: Props) {
+function AboutMeNav({ currentSection, setCurrentSection }: Props) {
   return (
-    <div className=" absolute top-0 flex gap-3 rounded-lg border bg-slate-500 p-2 text-white">
+    <div className=" absolute top-0 flex w-full gap-3 rounded-lg bg-sky-900 p-2 px-5 text-gray-300">
       <button
-        className="rounded-lg border bg-slate-950 p-2 text-xs hover:bg-sky-950 sm:text-base"
+        className={`rounded-lg  p-2 px-10 ${
+          currentSection === "hobbies" ? "bg-sky-700" : "bg-black"
+        }  text-xs sm:text-base`}
         onClick={() => setCurrentSection("hobbies")}
       >
         Hobbies
       </button>
       <button
-        className="rounded-lg border bg-slate-950 p-2 text-xs hover:bg-sky-950 sm:text-base"
+        className={`rounded-lg  p-2 sm:px-10 ${
+          currentSection === "background" ? "bg-sky-700" : "bg-black"
+        }  text-xs sm:text-base`}
         onClick={() => setCurrentSection("background")}
       >
         Professional Background
