@@ -14,10 +14,10 @@ function ProjectsSection() {
       id="Projects"
       className="flex w-screen flex-col justify-center bg-gray-300 sm:p-10"
     >
-      <p className=" py-10 text-center text-6xl antialiased sm:text-start ">
+      <p className=" py-10 text-center text-5xl antialiased sm:text-start sm:text-6xl ">
         Portfolio 🎨
       </p>
-      <p className="py-3  text-4xl italic">🌟Main Highlight🌟</p>
+      <p className="py-3  text-2xl italic sm:text-4xl">🌟Main Highlight🌟</p>
       <HighlightCard
         projectName="Pc Hub - Ecommerce"
         videoUrl="https://www.youtube.com/embed/HdrY0wZqlFk"
