@@ -60,8 +60,9 @@ function SmallVideoOnlyCard({
         </div>
         <div className="flex justify-center gap-2 py-10">
           <a
-            className="flex rounded-lg border-2 border-sky-600 bg-zinc-300 px-5"
+            className="flex rounded-lg border-2 border-sky-600 bg-zinc-300 px-5 hover:text-sky-600"
             href={code}
+            target="_blank"
           >
             <FontAwesomeIcon
               icon={faLink}
@@ -70,7 +71,7 @@ function SmallVideoOnlyCard({
             <p className="flex items-center font-medium">Code</p>
           </a>
           <a
-            className="flex rounded-lg border-2  border-sky-600 bg-zinc-300 px-5"
+            className="flex rounded-lg border-2 border-sky-600  bg-zinc-300 px-5 hover:text-sky-600"
             href={demo}
           >
             <FontAwesomeIcon

@@ -4,12 +4,12 @@ import TypingAnimation from "./TypingAnimation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-function GreetingsSection() {
+function HomeSection() {
   return (
     <section
       id="Home"
       className="relative flex h-screen w-screen flex-col
-      items-center bg-slate-100 pt-5 sm:flex-row sm:items-start sm:pt-60 "
+      items-center bg-sky-100 pt-5 sm:flex-row sm:items-start sm:pt-60 "
     >
       <div className="relative mt-16 flex w-screen flex-col items-center sm:mt-0 sm:h-screen xl:pl-60">
         <PictureBlob />
@@ -30,10 +30,16 @@ function GreetingsSection() {
         </p>
         <div className="media-icons-container flex  pl-8 pt-5 lg:pl-16">
           <a href="https://www.linkedin.com/in/pavatbdev/" target="_blank">
-            <FontAwesomeIcon icon={faGithub} className="h-16 w-16 pr-5" />
+            <FontAwesomeIcon
+              icon={faGithub}
+              className="h-14 w-14 pr-5 hover:text-blue-700"
+            />
           </a>
           <a href="https://github.com/JuanP-VT" target="_blank">
-            <FontAwesomeIcon icon={faLinkedin} className="h-16 w-16" />
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="h-14 w-14 hover:text-blue-700"
+            />
           </a>
         </div>
       </div>
@@ -41,4 +47,4 @@ function GreetingsSection() {
   );
 }
 
-export default GreetingsSection;
+export default HomeSection;
