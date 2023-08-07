@@ -19,7 +19,7 @@ type Props = {
 function BurgerControls({ currentLayer, setCurrentLayer }: Props) {
   return (
     <div
-      className="flex h-60 w-60 cursor-pointer flex-col sm:h-96 sm:w-96"
+      className="flex h-60 w-60 flex-col sm:h-96 sm:w-96"
       style={{
         backgroundImage: `url("/${currentLayer}.png")`,
         backgroundRepeat: "no-repeat",
