@@ -249,8 +249,8 @@ function ChronologicalOrdered() {
           src="/projects-photos/developer.png"
           techs={["typescript", "react", "tailwindcss", "nextjs", "vercel"]}
           backgroundColor="bg-red-100"
-          code="https://github.com/JuanP-VT/pc-ecommerce"
-          demo="https://store-juanp-vt.vercel.app"
+          code="https://github.com/JuanP-VT/developer-page"
+          demo="https://pablodev.vercel.app/"
           objectives={["Showcase my skills", "Describe my developer journey"]}
         />
       </div>
