@@ -52,8 +52,8 @@ function HighlightCard({
         </p>
       </div>
       <div className="flex flex-col px-2 sm:w-full md:w-128">
-        <div className="flex-flex-col px-2">
-          <p className="flex justify-center p-4 text-3xl">{projectName}</p>
+        <div className="flex-flex-col ">
+          <p className="flex justify-center py-4 text-3xl">{projectName}</p>
           <p className="mb-5 flex justify-center  xl:px-10">{description}</p>
         </div>
 

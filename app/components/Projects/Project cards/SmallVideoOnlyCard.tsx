@@ -58,29 +58,6 @@ function SmallVideoOnlyCard({
             <TechIcon key={`prjTech${i}`} name={tech} />
           ))}
         </div>
-        <div className="flex justify-center gap-2 py-10">
-          <a
-            className="flex rounded-lg border-2 border-sky-600 bg-zinc-300 px-5 hover:text-sky-600"
-            href={code}
-            target="_blank"
-          >
-            <FontAwesomeIcon
-              icon={faLink}
-              className="h-5 w-5 p-2 sm:h-8 sm:w-8"
-            />
-            <p className="flex items-center font-medium">Code</p>
-          </a>
-          <a
-            className="flex rounded-lg border-2 border-sky-600  bg-zinc-300 px-5 hover:text-sky-600"
-            href={demo}
-          >
-            <FontAwesomeIcon
-              icon={faGithub}
-              className="h-5 w-5 p-2 sm:h-8 sm:w-8"
-            />
-            <p className="flex items-center font-medium">Demo</p>
-          </a>
-        </div>
       </div>
     </div>
   );

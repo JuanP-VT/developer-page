@@ -8,7 +8,7 @@ function HomeSection() {
   return (
     <section
       id="Home"
-      className="relative flex h-screen w-screen flex-col
+      className="relative flex min-h-screen w-screen flex-col
       items-center bg-sky-100 pt-5 sm:flex-row sm:items-start sm:pt-60 "
     >
       <div className="relative mt-16 flex w-screen flex-col items-center sm:mt-0 sm:h-screen xl:pl-60">
