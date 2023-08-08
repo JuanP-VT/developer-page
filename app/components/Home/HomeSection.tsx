@@ -1,4 +1,3 @@
-import React from "react";
 import PictureBlob from "./PictureBlob";
 import TypingAnimation from "./TypingAnimation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -28,11 +27,11 @@ function HomeSection() {
           transformative power of determination in achieving remarkable results
           throughout my web development journey! 💪
         </p>
-        <div className="media-icons-container flex  pl-8 pt-5 lg:pl-16">
+        <div className="mb-10 flex gap-3 pl-8 pt-5 lg:pl-16">
           <a href="https://www.linkedin.com/in/pavatbdev/" target="_blank">
             <FontAwesomeIcon
               icon={faGithub}
-              className="h-14 w-14 pr-5 hover:text-blue-700"
+              className="h-14 w-14  hover:text-blue-700"
             />
           </a>
           <a href="https://github.com/JuanP-VT" target="_blank">
@@ -40,6 +39,14 @@ function HomeSection() {
               icon={faLinkedin}
               className="h-14 w-14 hover:text-blue-700"
             />
+          </a>
+          <a
+            target="_blank"
+            href="https://drive.google.com/file/d/1EPXG97lSj5F6bBXOv3BV_8Zg5Ms4sRk4/view?usp=drive_link"
+            className="flex h-12 w-24 items-center justify-center rounded-lg border
+              border-zinc-400 bg-black px-3 text-lg text-white shadow-lg outline-none hover:bg-blue-700"
+          >
+            Resume
           </a>
         </div>
       </div>

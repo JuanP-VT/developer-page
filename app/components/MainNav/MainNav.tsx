@@ -11,6 +11,7 @@
  *
  * @returns {JSX.Element} JSX element representing the main navigation bar of the application.
  */
+"use client";
 import { useEffect, useState } from "react";
 
 function MainNav() {

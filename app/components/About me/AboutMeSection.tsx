@@ -8,6 +8,7 @@
  * @component
  * @returns {JSX.Element} JSX element representing the About Me section.
  */
+"use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import Hobbies from "./Hobbies";
