@@ -42,7 +42,7 @@ function HomeSection() {
           </a>
           <a
             target="_blank"
-            href="https://drive.google.com/file/d/1EPXG97lSj5F6bBXOv3BV_8Zg5Ms4sRk4/view?usp=drive_link"
+            href="https://drive.google.com/file/d/19AceigkVwr-D7-P89zLpnab6mZV_RCV5/view?usp=drive_link"
             className="flex h-12 w-24 items-center justify-center rounded-lg border
               border-zinc-400 bg-black px-3 text-lg text-white shadow-lg outline-none hover:bg-blue-700"
           >
