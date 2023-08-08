@@ -14,9 +14,9 @@ function ChronologicalOrdered() {
         <SmallProjectCard
           name="Landing Page"
           description="Static Page - A common Home Page page found in almost all services"
-          src="/projects-photos/2-SignUp Page.png"
           techs={["html", "css"]}
           backgroundColor="bg-red-100"
+          src="/projects-photos/1-LandingPage.png"
           code="https://github.com/JuanP-VT/Landing-page"
           demo="https://juanp-vt.github.io/Landing-page/"
           objectives={[
@@ -29,7 +29,7 @@ function ChronologicalOrdered() {
         <SmallProjectCard
           name="Sign Up Page"
           description="Static Page - A common sign up registration page found in almost all services"
-          src="/projects-photos/1-LandingPage.png"
+          src="/projects-photos/2-SignUp Page.png"
           techs={["html", "css"]}
           backgroundColor="bg-red-100"
           code="https://github.com/JuanP-VT/Sign-up-page"
@@ -213,8 +213,8 @@ function ChronologicalOrdered() {
             "heroku",
           ]}
           backgroundColor="bg-red-100"
-          code="https://github.com/JuanP-VT/https://juanp-vt.github.io/store-inventory"
-          demo="https://juanp-vt.github.io/personal-web-page/"
+          code="https://github.com/JuanP-VT/store-inventory"
+          demo="https://juanp-vt.github.io/store-inventory/"
           objectives={[
             "Frontend-Backend Integration",
             "Build Restful API",
@@ -236,8 +236,8 @@ function ChronologicalOrdered() {
             "jest",
           ]}
           backgroundColor="bg-red-100"
-          code="https://github.com/JuanP-VT/https://juanp-vt.github.io/store-inventory/"
-          demo="https://juanp-vt.github.io/personal-web-page/"
+          code="https://store-juanp-vt.vercel.app/"
+          demo="https://github.com/JuanP-VT/pc-ecommerce"
           objectives={[
             "Get deeper understanding of the whole application development process",
             "Unit Testing",

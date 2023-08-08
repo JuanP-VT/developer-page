@@ -12,7 +12,7 @@ function ProjectsSection() {
   return (
     <section
       id="Projects"
-      className="flex w-screen flex-col justify-center bg-gray-300 sm:p-10"
+      className="flex w-screen flex-col justify-center bg-gray-300 pb-20 sm:p-10"
     >
       <p className=" py-10 text-center text-5xl antialiased sm:text-start sm:text-6xl ">
         Portfolio 🎨
