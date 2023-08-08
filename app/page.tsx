@@ -1,5 +1,3 @@
-"use client";
-
 import AboutMeSection from "./components/About me/AboutMeSection";
 import HomeSection from "./components/Home/HomeSection";
 import MainNav from "./components/MainNav/MainNav";

@@ -2,7 +2,7 @@
  * Represents a React component for displaying a typing animation using the 'typed.js' library.
  * @component
  */
-
+"use client";
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 function TypingAnimation() {
