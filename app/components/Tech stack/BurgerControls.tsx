@@ -10,13 +10,21 @@
  * @returns {JSX.Element} The JSX element representing the BurgerControls.
  */
 import { Dispatch, SetStateAction } from "react";
-
+import { useEffect } from "react";
 type Props = {
   currentLayer: "top" | "mid" | "bot";
   setCurrentLayer: Dispatch<SetStateAction<"top" | "mid" | "bot">>;
 };
 
 function BurgerControls({ currentLayer, setCurrentLayer }: Props) {
+  useEffect(() => {
+    // Preload images
+    const layers = ["top", "mid", "bot"];
+    layers.forEach((layer) => {
+      const img = new Image();
+      img.src = `/${layer}.png`;
+    });
+  }, []);
   return (
     <div
       className="flex h-60 w-60 flex-col sm:h-96 sm:w-96"

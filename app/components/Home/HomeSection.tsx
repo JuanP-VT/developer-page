@@ -30,19 +30,19 @@ function HomeSection() {
         <div className="mb-10 flex gap-3 pl-8 pt-5 lg:pl-16">
           <a href="https://www.linkedin.com/in/pavatbdev/" target="_blank">
             <FontAwesomeIcon
-              icon={faGithub}
+              icon={faLinkedin}
               className="h-14 w-14  hover:text-blue-700"
             />
           </a>
           <a href="https://github.com/JuanP-VT" target="_blank">
             <FontAwesomeIcon
-              icon={faLinkedin}
+              icon={faGithub}
               className="h-14 w-14 hover:text-blue-700"
             />
           </a>
           <a
             target="_blank"
-            href="https://drive.google.com/file/d/19AceigkVwr-D7-P89zLpnab6mZV_RCV5/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1k01L1YSbF02bI2obiefP-5tBAsJgKWSO/view?usp=sharing"
             className="flex h-12 w-24 items-center justify-center rounded-lg border
               border-zinc-400 bg-black px-3 text-lg text-white shadow-lg outline-none hover:bg-blue-700"
           >

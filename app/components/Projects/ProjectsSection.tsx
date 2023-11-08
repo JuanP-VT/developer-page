@@ -66,7 +66,6 @@ function ProjectsSection() {
           the desire improve.
         </p>
       </div>
-      <VideoOnlyCardSection />
       <ChronologicalOrdered />
     </section>
   );

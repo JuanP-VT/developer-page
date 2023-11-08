@@ -11,9 +11,9 @@ function TypingAnimation() {
     if (typing.current) {
       const typed = new Typed(typing.current, {
         strings: [
-          " 🔧 Proven Industrial Engineer 🔧",
-          " 💻 Passionate Web Developer 💻",
-          " 📖 Dedicated Self Learner 📖",
+          "Proven Industrial Engineer",
+          "Passionate Web Developer",
+          "Dedicated Self Learner",
         ], // Speed settings
         startDelay: 300,
         typeSpeed: 40,
