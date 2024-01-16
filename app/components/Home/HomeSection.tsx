@@ -8,7 +8,7 @@ function HomeSection() {
     <section
       id="Home"
       className="relative flex min-h-screen w-screen flex-col
-      items-center bg-sky-100 pt-5 sm:flex-row sm:items-start sm:pt-60 "
+      items-center bg-emerald-950 pt-5 sm:flex-row sm:items-start sm:pt-60 "
     >
       <div className="relative mt-16 flex w-screen flex-col items-center sm:mt-0 sm:h-screen xl:pl-60">
         <PictureBlob />
@@ -16,11 +16,11 @@ function HomeSection() {
           <TypingAnimation />
         </div>
       </div>
-      <div className=" mt-5 flex flex-col  xl:pr-40">
+      <div className=" mt-5 flex flex-col  text-slate-200 xl:pr-40">
         <h1 className=" mb-10 flex px-10 text-center text-5xl antialiased lg:w-full lg:pl-16 lg:text-7xl">
-          FullStack Developer
+          Fullstack Developer
         </h1>
-        <p className="px-8  lg:pl-16  2xl:pr-40">
+        <p className="px-8  md:text-lg lg:pl-16  2xl:pr-40">
           Hello, Im Juan Pablo Valdez, a proven Industrial Engineer with a
           passion for ReactJS and NodeJS development. I believe in the
           transformative power of determination in achieving remarkable results

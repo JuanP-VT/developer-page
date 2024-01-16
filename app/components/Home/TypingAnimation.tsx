@@ -32,7 +32,7 @@ function TypingAnimation() {
     <div>
       <span
         ref={typing}
-        className="md:text-1xl font-medium italic subpixel-antialiased"
+        className="md:text-1xl font-bold italic text-slate-200 subpixel-antialiased"
       ></span>
     </div>
   );
