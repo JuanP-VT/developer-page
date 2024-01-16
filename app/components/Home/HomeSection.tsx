@@ -18,8 +18,7 @@ function HomeSection() {
       </div>
       <div className=" mt-5 flex flex-col  xl:pr-40">
         <h1 className=" mb-10 flex px-10 text-center text-5xl antialiased lg:w-full lg:pl-16 lg:text-7xl">
-          ReactJS-NodeJS <br />
-          Developer
+          FullStack Developer
         </h1>
         <p className="px-8  lg:pl-16  2xl:pr-40">
           Hello, Im Juan Pablo Valdez, a proven Industrial Engineer with a
@@ -39,14 +38,6 @@ function HomeSection() {
               icon={faGithub}
               className="h-14 w-14 hover:text-blue-700"
             />
-          </a>
-          <a
-            target="_blank"
-            href="https://drive.google.com/file/d/1b2IWZGYg0yHgtUePbFSn7gG2KHyqhZgW/view?usp=sharing"
-            className="flex h-12 w-24 items-center justify-center rounded-lg border
-              border-zinc-400 bg-black px-3 text-lg text-white shadow-lg outline-none hover:bg-blue-700"
-          >
-            Resume
           </a>
         </div>
       </div>
