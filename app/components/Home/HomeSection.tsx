@@ -8,7 +8,7 @@ function HomeSection() {
     <section
       id="Home"
       className="relative flex min-h-screen w-screen flex-col
-      items-center bg-emerald-950 pt-5 sm:flex-row sm:items-start sm:pt-60 "
+      items-center bg-slate-950 pt-5 sm:flex-row sm:items-start sm:pt-60 "
     >
       <div className="relative mt-16 flex w-screen flex-col items-center sm:mt-0 sm:h-screen xl:pl-60">
         <PictureBlob />
@@ -17,26 +17,28 @@ function HomeSection() {
         </div>
       </div>
       <div className=" mt-5 flex flex-col  text-slate-200 xl:pr-40">
-        <h1 className=" mb-10 flex px-10 text-center text-5xl antialiased lg:w-full lg:pl-16 lg:text-7xl">
+        <h1 className=" mb-10 flex px-10 text-center text-5xl text-red-600 antialiased lg:w-full lg:pl-16 lg:text-7xl">
           Fullstack Developer
         </h1>
         <p className="px-8  md:text-lg lg:pl-16  2xl:pr-40">
-          Hello, Im Juan Pablo Valdez, a proven Industrial Engineer with a
-          passion for ReactJS and NodeJS development. I believe in the
-          transformative power of determination in achieving remarkable results
-          throughout my web development journey! 💪
+          Hello, Im <span className="text-red-600">Juan Pablo Valdez</span>, a
+          proven Industrial Engineer with a passion for{" "}
+          <span className="text-red-600">ReactJS</span> and{" "}
+          <span className="text-red-600">NodeJS</span> development. I believe in
+          the transformative power of love and determination in achieving
+          remarkable results throughout my web development journey! 💪
         </p>
         <div className="mb-10 flex gap-3 pl-8 pt-5 lg:pl-16">
           <a href="https://www.linkedin.com/in/pavatbdev/" target="_blank">
             <FontAwesomeIcon
               icon={faLinkedin}
-              className="h-14 w-14  hover:text-blue-700"
+              className="h-14 w-14  hover:text-red-700"
             />
           </a>
           <a href="https://github.com/JuanP-VT" target="_blank">
             <FontAwesomeIcon
               icon={faGithub}
-              className="h-14 w-14 hover:text-blue-700"
+              className="h-14 w-14 hover:text-red-700"
             />
           </a>
         </div>

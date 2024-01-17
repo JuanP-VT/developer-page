@@ -11,9 +11,10 @@ function TypingAnimation() {
     if (typing.current) {
       const typed = new Typed(typing.current, {
         strings: [
-          "Proven Industrial Engineer",
           "Passionate Web Developer",
           "Dedicated Self Learner",
+          "Chill dude",
+          "Proven Industrial Engineer",
         ], // Speed settings
         startDelay: 300,
         typeSpeed: 40,
@@ -32,7 +33,7 @@ function TypingAnimation() {
     <div>
       <span
         ref={typing}
-        className="md:text-1xl font-bold italic text-slate-200 subpixel-antialiased"
+        className="md:text-1xl font-bold italic text-red-600 subpixel-antialiased"
       ></span>
     </div>
   );
