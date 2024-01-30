@@ -16,47 +16,57 @@ type Props = {
 };
 
 function TechStack({ currentLayer }: Props) {
-  if (currentLayer === "top") {
-    return (
-      <TechList
-        techs={[
-          "javascript",
-          "typescript",
-          "react",
-          "nextjs",
-          "html",
-          "css",
-          "tailwindcss",
-          "sass",
-          "bootstrap",
-        ]}
-        title="Frontend"
-      />
-    );
-  }
-  if (currentLayer === "mid") {
-    return (
-      <TechList
-        techs={[
-          "javascript",
-          "typescript",
-          "nodejs",
-          "expressjs",
-          "nextjs",
-          "mongodb",
-        ]}
-        title="Backend"
-      />
-    );
-  }
-  if (currentLayer === "bot") {
-    return (
-      <TechList
-        techs={["jest", "git", "github", "vscode", "vercel", "heroku"]}
-        title="Tools"
-      />
-    );
-  }
+  return (
+    <div className="relative h-96">
+      <div
+        className={`absolute h-72 w-72 transition-all duration-500 ${
+          currentLayer === "top" ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <TechList
+          techs={[
+            "javascript",
+            "typescript",
+            "react",
+            "nextjs",
+            "html",
+            "css",
+            "tailwindcss",
+            "sass",
+            "bootstrap",
+          ]}
+          title="Frontend"
+        />
+      </div>
+      <div
+        className={`absolute h-72 w-72 transition-all duration-500 ${
+          currentLayer === "mid" ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <TechList
+          techs={[
+            "javascript",
+            "typescript",
+            "nodejs",
+            "expressjs",
+            "nextjs",
+            "mongodb",
+          ]}
+          title="Backend"
+        />
+      </div>
+      <div
+        className={`absolute h-72 w-72 transition-all duration-500 ${
+          currentLayer === "bot" ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <TechList
+          techs={["jest", "git", "github", "vscode", "vercel", "heroku"]}
+          title="Tools"
+        />
+      </div>
+    </div>
+  );
 }
 
 export default TechStack;
