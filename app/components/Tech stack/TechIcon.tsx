@@ -19,11 +19,11 @@ function TechIcon({ name }: Props) {
       <Image
         alt="tech icon"
         src={`https://skillicons.dev/icons?i=${name}`}
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         className="self-center"
       />
-      <p className="mt-2 text-center text-sm capitalize sm:text-base">{name}</p>
+      <p className="mt-1 text-center text-xs capitalize">{name}</p>
     </div>
   );
 }

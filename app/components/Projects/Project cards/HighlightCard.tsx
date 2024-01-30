@@ -17,84 +17,80 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 import TechIcon from "../../Tech stack/TechIcon";
+import Image from "next/image";
+import Link from "next/link";
 export const dynamic = "force-dynamic";
 type Props = {
-  videoUrl: string;
   projectName: string;
   description: string;
   techs: string[];
-  featureList: string[];
-  code: string;
+  code?: string;
   demo: string;
+  imageSrc: string;
 };
 
 function HighlightCard({
-  videoUrl,
   projectName,
   description,
   techs,
-  featureList,
   demo,
   code,
+  imageSrc,
 }: Props) {
   return (
     <div
-      className="flex h-min w-full  flex-col-reverse justify-center rounded-xl border-2
-         border-zinc-300 bg-sky-100 pb-5 shadow-md md:flex-row"
+      className="flex h-min  max-w-xl  rounded-xl border-2 border-zinc-300
+         bg-sky-50 p-3 pb-5 shadow-md md:flex-row"
     >
-      <div className="mt-5 flex flex-col items-center justify-center sm:mr-5 sm:h-full sm:max-w-4xl">
-        <iframe src={videoUrl} className="h-128 w-full rounded-xl   "></iframe>
-        <p className="py-2 pl-2 pr-3  text-sm">
-          I enthusiastically share my motivations behind this project, delve
-          into the technical architecture that powers it, and provide
-          comprehensive explanation of the Apps functionalities. <br />
-          <strong>Spanish / Sub Eng</strong>
-        </p>
-      </div>
-      <div className="flex flex-col px-2 sm:w-full md:w-128">
-        <div className="flex-flex-col ">
-          <p className="flex justify-center py-4 text-3xl">{projectName}</p>
-          <p className="mb-5 flex justify-center  xl:px-10">{description}</p>
+      <div className="flex flex-col px-2">
+        <div className="flex flex-col">
+          <div className="flex flex-col">
+            <p className="flex p-2 text-3xl">{projectName}</p>
+          </div>
         </div>
-
-        <div className="grid grid-cols-3 items-center justify-center gap-y-5">
-          {techs.map((tech, i) => (
-            <TechIcon key={`prjTech${i}`} name={tech} />
-          ))}
-        </div>
-        <div className="flex flex-col px-2">
-          <h2 className="mb-2 ml-3 mt-10 text-lg font-semibold text-gray-900 ">
-            Features
-          </h2>
-          <ul className="grid max-w-md grid-cols-1   space-y-1  sm:grid-cols-2">
-            {featureList.map((feature, i) => (
-              <li className="ml-3 mr-2" key={`ft${i}`}>
-                {feature}
-              </li>
+        <div className="flex flex-col xl:flex-row">
+          <Image
+            className=" w-3/5 self-center rounded-md"
+            alt="demo site"
+            width={500}
+            height={500}
+            src={imageSrc}
+          />
+          <div className="mt-2 grid grid-cols-3 items-center justify-center gap-y-2 self-center px-8 xl:px-0">
+            {techs.map((tech, i) => (
+              <TechIcon key={`prjTech${i}`} name={tech} />
             ))}
-          </ul>
+          </div>
         </div>
-        <div className="flex justify-center gap-2 py-10">
-          <a
-            className="flex rounded-lg border-2 border-sky-600 bg-zinc-300 px-5 hover:text-blue-500"
-            href={code}
-          >
-            <FontAwesomeIcon
-              icon={faLink}
-              className="h-5 w-5 p-2 sm:h-8 sm:w-8"
-            />
-            <p className="flex items-center font-medium">Code</p>
-          </a>
-          <a
-            className="flex rounded-lg border-2  border-sky-600 bg-zinc-300 px-5 hover:text-blue-500"
+        <p className="py-4 pl-3 ">{description}</p>
+
+        <div className="flex gap-2 self-baseline p-3">
+          {code ? (
+            <Link
+              target="_blank"
+              className="flex h-11 rounded-lg border-2 border-sky-600 bg-zinc-200 px-2 hover:text-blue-500"
+              href={code}
+            >
+              <FontAwesomeIcon
+                icon={faLink}
+                className="h-4 w-4 p-2 sm:h-8 sm:w-8"
+              />
+              <p className="flex items-center font-medium">Code</p>
+            </Link>
+          ) : (
+            ""
+          )}
+          <Link
+            target="_blank"
+            className="flex h-11 self-center rounded-lg border-2 border-sky-600 bg-zinc-200 px-2 hover:text-blue-500"
             href={demo}
           >
             <FontAwesomeIcon
               icon={faGithub}
-              className="h-5  w-5 p-2 sm:h-8 sm:w-8"
+              className="h-4 w-4 self-center p-2 sm:h-8 sm:w-8"
             />
             <p className="flex items-center font-medium">Demo</p>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -7,58 +7,64 @@
 "use client";
 import ChronologicalOrdered from "./ChronologicalOrdered";
 import HighlightCard from "./Project cards/HighlightCard";
-import VideoOnlyCardSection from "./VideoOnlyCardSection";
 function ProjectsSection() {
   return (
     <section
       id="Projects"
-      className="flex w-screen flex-col justify-center bg-gray-300 pb-20 sm:p-10"
+      className="flex w-screen flex-col justify-center bg-black pb-20 sm:p-10 "
     >
-      <p className=" text-center text-5xl antialiased sm:text-start sm:text-6xl ">
-        Portfolio 🎨
+      <p className=" text-center text-5xl  text-white antialiased sm:text-start sm:text-6xl ">
+        Experience
       </p>
-      <p className="py-3  text-2xl italic sm:text-4xl">🌟Main Highlight🌟</p>
-      <HighlightCard
-        projectName="Pc Hub - Ecommerce App"
-        videoUrl="https://www.youtube.com/embed/HdrY0wZqlFk"
-        description="Fullstack Ecommerce Prototype.
-        Streamlined inventory management, user registration, and seamless product selling."
-        techs={[
-          "typescript",
-          "react",
-          "nextjs",
-          "tailwindcss",
-          "mongodb",
-          "jest",
-          "git",
-          "github",
-          "vercel",
-        ]}
-        featureList={[
-          "Responsive design",
-          "User authentication",
-          "Authentication roles",
-          "Product catalog",
-          "Product search filters",
-          "Pagination",
-          "Product page",
-          "Shopping cart system",
-          "Payment process",
-          "User profile",
-          "User reviews",
-          "Admin Panel",
-          "Add product ",
-          "Edit product",
-          "Delete product",
-        ]}
-        demo="https://store-juanp-vt.vercel.app/"
-        code="https://github.com/JuanP-VT/pc-ecommerce"
-      />
+      <p className="py-3  text-2xl italic text-white sm:text-4xl">
+        🌟Highlight🌟
+      </p>
+      <div className="flex flex-col items-center justify-center sm:gap-20 xl:flex-row">
+        <HighlightCard
+          imageSrc="/projects-photos/17-Temazcal.png"
+          projectName="Temazcal Website"
+          description="Developed a responsive website for a local business. The project involved crafting an eye-catching design, a blog system, a FAQ section, an image gallery, and contact. I also integrated the website with a Map Api and Contentful CMS.
+          Clients were very happy with my work"
+          techs={[
+            "typescript",
+            "react",
+            "nextjs",
+            "tailwindcss",
+            "jest",
+            "git",
+            "github",
+            "vercel",
+          ]}
+          demo="https://temazcalmochis.com"
+        />
+        <HighlightCard
+          projectName="Pc Hub - Ecommerce App"
+          imageSrc="/projects-photos/16-Ecommerce2.png"
+          description="Pc Hub is my most complex personal project to date, a full-stack ecommerce
+          app built from the ground up to challenge myself and deepen my
+          skills in both front-end and back-end development. Though front-end
+          is my forte, I am particularly proud of how I thrived in this
+          full-stack environment"
+          techs={[
+            "typescript",
+            "react",
+            "nextjs",
+            "tailwindcss",
+            "mongodb",
+            "jest",
+            "git",
+            "github",
+            "vercel",
+          ]}
+          demo="https://store-juanp-vt.vercel.app/"
+          code="https://github.com/JuanP-VT/pc-ecommerce"
+        />
+      </div>
       <div className="flex flex-col p-2">
-        <p className="py-5 text-center text-5xl sm:text-start">
+        <p className="py-5 text-center text-5xl text-white sm:text-start">
           Developer Journey 🚀
         </p>
-        <p className="font-medium sm:text-lg lg:w-270">
+        <p className="font-medium text-white sm:text-lg lg:w-270">
           Welcome to my portfolio, a testament to my unyielding determination,
           passion, and discipline in web development. Each project reflects my
           pursuit of excellence, embracing challenges as opportunities for
