@@ -11,9 +11,9 @@ function ProjectsSection() {
   return (
     <section
       id="Projects"
-      className="flex w-screen flex-col justify-center bg-black pb-20 sm:p-10 "
+      className="flex  flex-col justify-center bg-black pb-20 sm:p-10 "
     >
-      <p className=" text-center text-5xl  text-white antialiased sm:text-start sm:text-6xl ">
+      <p className=" mt-6 text-center text-5xl text-white antialiased sm:text-start sm:text-6xl ">
         Experience
       </p>
       <p className="py-3  text-2xl italic text-white sm:text-4xl">

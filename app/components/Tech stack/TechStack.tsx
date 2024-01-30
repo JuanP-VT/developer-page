@@ -17,7 +17,7 @@ type Props = {
 
 function TechStack({ currentLayer }: Props) {
   return (
-    <div className="relative h-96">
+    <div className="relative h-96 w-72">
       <div
         className={`absolute h-72 w-72 transition-all duration-500 ${
           currentLayer === "top" ? "opacity-100" : "opacity-0"

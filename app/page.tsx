@@ -6,7 +6,7 @@ import TechStackSection from "./components/Tech stack/TechStackSection";
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden">
+    <main className="relative ">
       <MainNav />
       <HomeSection />
       <TechStackSection />

@@ -10,7 +10,6 @@
  * @returns {JSX.Element} The JSX element representing the BurgerControls.
  */
 import { Dispatch, SetStateAction } from "react";
-import { useEffect } from "react";
 type Props = {
   currentLayer: "top" | "mid" | "bot";
   setCurrentLayer: Dispatch<SetStateAction<"top" | "mid" | "bot">>;

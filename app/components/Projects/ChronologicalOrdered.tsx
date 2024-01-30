@@ -10,7 +10,7 @@ function ChronologicalOrdered() {
   return (
     <div className="flex flex-col">
       <p className="px-2 py-10 text-4xl">Projects Sorted Chronologically</p>
-      <div className="grid grid-cols-1 gap-y-14 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid grid-cols-1 gap-y-10 p-3 md:grid-cols-2 xl:grid-cols-3">
         <SmallProjectCard
           name="Landing Page"
           description="Static Page - A common Home Page page found in almost all services"

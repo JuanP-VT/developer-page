@@ -26,7 +26,28 @@ function AboutMeSection() {
         setCurrentSection={setCurrentSection}
         currentSection={currentSection}
       />
-      {currentSection === "hobbies" ? <Hobbies /> : <Background />}
+      <div className="relative flex h-auto flex-col">
+        <div
+          className={`
+           w-full transition-all duration-300 ${
+             currentSection === "hobbies"
+               ? "block opacity-100"
+               : "absolute opacity-0"
+           }`}
+        >
+          <Hobbies />
+        </div>
+        <div
+          className={`
+           w-full transition-all duration-300 ${
+             currentSection === "background"
+               ? "block opacity-100"
+               : "absolute hidden h-0 opacity-100"
+           }`}
+        >
+          <Background />
+        </div>
+      </div>
       <div className="flex-col p-5">
         <p className="mb-3 text-xl font-bold text-blue-600">Contact</p>
         <div className=" flex flex-col gap-5 sm:flex-row">

@@ -7,17 +7,18 @@
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
-  background-color: #3a3939;
+  background-color: #111111;
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #bce6bc;
+  background-color: #33c9ee;
   border-radius: 5px;
 }
 ::-webkit-scrollbar-track {
-  background-color: #2c2929;
+  background-color: #111010;
   border-radius: 5px;
 }
