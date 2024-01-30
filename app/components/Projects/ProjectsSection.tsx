@@ -62,14 +62,14 @@ function ProjectsSection() {
       </div>
       <div className="flex flex-col p-2">
         <p className="py-5 text-center text-5xl text-white sm:text-start">
-          Developer Journey 🚀
+          Student Journey 🚀
         </p>
         <p className="font-medium text-white sm:text-lg lg:w-270">
-          Welcome to my portfolio, a testament to my unyielding determination,
-          passion, and discipline in web development. Each project reflects my
-          pursuit of excellence, embracing challenges as opportunities for
-          growth. Witness my evolving skills and innovative solutions, driven by
-          the desire improve.
+          Witness the seeds of a web developer blossom! This student portfolio
+          showcases my unwavering pursuit of excellence in web development. From
+          basic front-end foundations to conquering Javascript intricacies, each
+          project marks a chapter in my learning journey. Join me as I unlock
+          new skills and refine my craft, one line of code at a time.
         </p>
       </div>
       <ChronologicalOrdered />

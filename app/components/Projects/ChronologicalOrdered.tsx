@@ -22,8 +22,8 @@ function ChronologicalOrdered() {
           objectives={[
             "Basic HTML elements; divs, p, span, img.",
             "Basic HTML attributes; id, class",
-            "Basic CSS properties: color, text properties, background, height, margin , padding",
-            "Box model",
+            "Basic CSS properties: height, width, margin",
+            "The Box model",
           ]}
         />
         <SmallProjectCard
@@ -50,7 +50,7 @@ function ChronologicalOrdered() {
           backgroundColor="bg-red-100"
           code="https://github.com/JuanP-VT/Admin-Dashboard"
           demo="https://juanp-vt.github.io/Admin-Dashboard/"
-          objectives={["CSS FlexBox", "CSS Grid"]}
+          objectives={["CSS FlexBox", "CSS Grid", "Page Layout"]}
         />
         <SmallProjectCard
           name="Rock Paper Scissors"
@@ -60,11 +60,7 @@ function ChronologicalOrdered() {
           backgroundColor="bg-red-100"
           code="https://github.com/JuanP-VT/Rock-Paper-Scissors"
           demo="https://juanp-vt.github.io/Rock-Paper-Scissors/"
-          objectives={[
-            "Practice javascript",
-            "DOM methods",
-            "Create readable/understandable code",
-          ]}
+          objectives={["Practice javascript", "DOM methods", "Code logic"]}
         />
         <SmallProjectCard
           name="Tic Tac Toe "
@@ -105,10 +101,10 @@ function ChronologicalOrdered() {
           code="https://github.com/JuanP-VT/Restaurant-Page "
           demo="https://juanp-vt.github.io/Restaurant-Page/"
           objectives={[
-            "Dynamic page with javascript (more DOM)",
-            "Practice clean code principles",
-            "Basic Webpack",
-            "More OOP",
+            "Dynamic Content",
+            "Clean Code principles",
+            "Modular code",
+            "Webpack",
           ]}
         />
         <SmallProjectCard
@@ -149,7 +145,7 @@ function ChronologicalOrdered() {
           code="https://github.com/JuanP-VT/Weather-App"
           demo="https://juanp-vt.github.io/Weather-App/"
           objectives={[
-            "API data fetching",
+            "API consumption",
             "Documentation reading",
             "Linters",
             "Enhanced styling",
