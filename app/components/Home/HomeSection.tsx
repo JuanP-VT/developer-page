@@ -7,8 +7,8 @@ function HomeSection() {
   return (
     <section
       id="Home"
-      className="relative flex min-h-screen flex-col items-center justify-center
-       bg-slate-950   md:flex-row  "
+      className="relative flex min-h-screen flex-col bg-slate-950 pt-5 sm:items-center
+       sm:justify-center   md:flex-row  "
     >
       <div className="relative mt-5  flex flex-col items-center xl:pl-60">
         <PictureBlob />
@@ -17,7 +17,7 @@ function HomeSection() {
         </div>
       </div>
       <div className=" mt-5 flex flex-col  text-slate-200 xl:pr-40">
-        <h1 className=" mb-10 flex px-10 text-center text-5xl font-medium text-red-600 antialiased lg:w-full lg:pl-16 lg:text-7xl">
+        <h1 className=" mb-10 p-1 text-center text-5xl font-medium text-red-600 antialiased lg:w-full lg:pl-16 lg:text-7xl">
           Web Developer
         </h1>
         <p className="px-8  md:text-lg lg:pl-16  2xl:pr-40">

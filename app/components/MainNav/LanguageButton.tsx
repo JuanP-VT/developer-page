@@ -5,7 +5,6 @@ type Props = {};
 
 export default function LanguageButton({}: Props) {
   const [currentLanguage, setCurrentLanguage] = useState<"es" | "en">("en");
-  console.log(currentLanguage);
   return (
     <div
       className=" border-grey-500 relative flex cursor-pointer gap-3 rounded-full border  "

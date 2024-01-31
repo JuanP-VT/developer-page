@@ -19,7 +19,7 @@ function ProjectsSection() {
       <p className="py-3  text-2xl italic text-white sm:text-4xl">
         🌟Highlight🌟
       </p>
-      <div className="flex flex-col items-center justify-center sm:gap-20 xl:flex-row">
+      <div className="flex flex-col items-center justify-center p-1 sm:gap-20 xl:flex-row">
         <HighlightCard
           imageSrc="/projects-photos/17-Temazcal.png"
           projectName="Temazcal Website"
@@ -64,7 +64,7 @@ function ProjectsSection() {
         <p className="py-5 text-center text-5xl text-white sm:text-start">
           Student Journey 🚀
         </p>
-        <p className="font-medium text-white sm:text-lg lg:w-270">
+        <p className="font-medium text-white sm:text-lg xl:w-270">
           Witness the seeds of a web developer blossom! This student portfolio
           showcases my unwavering pursuit of excellence in web development. From
           basic front-end foundations to conquering Javascript intricacies, each
