@@ -19,7 +19,7 @@ function TechStack({ currentLayer }: Props) {
   return (
     <div className="relative h-96 w-72">
       <div
-        className={`absolute h-72 w-72 transition-all duration-500 ${
+        className={`absolute h-72 w-full transition-all duration-500 ${
           currentLayer === "top" ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -39,7 +39,7 @@ function TechStack({ currentLayer }: Props) {
         />
       </div>
       <div
-        className={`absolute h-72 w-72 transition-all duration-500 ${
+        className={`absolute h-72 w-full transition-all duration-500 ${
           currentLayer === "mid" ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -56,7 +56,7 @@ function TechStack({ currentLayer }: Props) {
         />
       </div>
       <div
-        className={`absolute h-72 w-72 transition-all duration-500 ${
+        className={`absolute h-72 w-full transition-all duration-500 ${
           currentLayer === "bot" ? "opacity-100" : "opacity-0"
         }`}
       >

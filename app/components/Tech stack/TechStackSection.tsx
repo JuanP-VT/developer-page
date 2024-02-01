@@ -9,10 +9,12 @@
  * @returns {JSX.Element} The JSX element representing the TechStackSection.
  */
 "use client";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import BurgerControls from "./BurgerControls";
 import TechStack from "./TechStack";
+import { LanguageContext } from "@/app/page";
 function TechStackSection() {
+  const languageContext = useContext(LanguageContext);
   const [currentLayer, setCurrentLayer] = useState<"top" | "mid" | "bot">(
     "top",
   );
@@ -22,8 +24,16 @@ function TechStackSection() {
       className="relative flex min-h-screen  flex-col
       items-center border-2 bg-cyan-100"
     >
-      <p className="pt-20 text-4xl font-medium sm:text-5xl">My Tech Stack</p>
-      <span className="mb-20 ">Click The Hamburger!</span>
+      <p className="pt-20 text-center text-4xl font-medium sm:text-5xl">
+        {languageContext === "en" ? "My Tech Stack" : "Mi Stack Tecnológico"}
+      </p>
+      <span className="mb-20 ">
+        {" "}
+        {languageContext === "en"
+          ? "Click The Burger!"
+          : "Click a la Hamburguesa!"}
+        !
+      </span>
       <div className="mb-5 flex w-full flex-col items-center justify-center sm:flex-row">
         <BurgerControls
           setCurrentLayer={setCurrentLayer}
