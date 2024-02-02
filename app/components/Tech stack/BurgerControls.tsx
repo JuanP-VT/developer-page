@@ -28,11 +28,11 @@ function BurgerControls({ currentLayer, setCurrentLayer }: Props) {
         className={`absolute h-full w-full `}
       />
       <div
-        className="z-20 flex h-20 w-full bg-transparent sm:h-36 sm:cursor-pointer"
+        className="z-20 flex h-28 w-full bg-transparent sm:h-36 sm:cursor-pointer"
         onClick={() => setCurrentLayer("top")}
       ></div>
       <div
-        className="z-20 flex h-20 w-full bg-transparent  sm:h-28 sm:cursor-pointer"
+        className="z-20 flex h-24 w-full bg-transparent  sm:h-36 sm:cursor-pointer"
         onClick={() => setCurrentLayer("mid")}
       ></div>
       <div

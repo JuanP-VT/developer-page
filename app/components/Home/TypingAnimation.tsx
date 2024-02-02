@@ -22,10 +22,10 @@ function TypingAnimation() {
                 "Proven Industrial Engineer",
               ]
             : [
-                "Desarrollador web apasionado",
-                "Autodidacta dedicado",
-                "Disciplinado",
-                "Ingeniero industrial",
+                "Desarrollador Apasionado",
+                "Autodidacta y Dedicado",
+                "Buen Compañero",
+                "Ingeniero Industrial",
               ], // Speed settings
         startDelay: 300,
         typeSpeed: 40,
