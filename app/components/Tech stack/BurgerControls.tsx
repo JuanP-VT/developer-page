@@ -10,6 +10,7 @@
  * @returns {JSX.Element} The JSX element representing the BurgerControls.
  */
 import { Dispatch, SetStateAction } from "react";
+import Image from "next/image";
 type Props = {
   currentLayer: "top" | "mid" | "bot";
   setCurrentLayer: Dispatch<SetStateAction<"top" | "mid" | "bot">>;
@@ -17,24 +18,25 @@ type Props = {
 
 function BurgerControls({ currentLayer, setCurrentLayer }: Props) {
   return (
-    <div
-      className="flex h-60 w-60 flex-col sm:h-96 sm:w-96"
-      style={{
-        backgroundImage: `url("/${currentLayer}.png")`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "contain",
-      }}
-    >
+    <div className="relative flex h-60 w-60 flex-col sm:h-96 sm:w-96">
+      <Image
+        draggable={false}
+        src={`/${currentLayer}.png`}
+        alt=""
+        height={700}
+        width={700}
+        className={`absolute h-full w-full `}
+      />
       <div
-        className="flex h-20 w-full sm:h-36"
+        className="z-20 flex h-20 w-full bg-transparent sm:h-36 sm:cursor-pointer"
         onClick={() => setCurrentLayer("top")}
       ></div>
       <div
-        className="flex h-20 w-full sm:h-28"
+        className="z-20 flex h-20 w-full bg-transparent  sm:h-28 sm:cursor-pointer"
         onClick={() => setCurrentLayer("mid")}
       ></div>
       <div
-        className="flex h-14 w-full sm:h-20 "
+        className="z-20 flex h-20 w-full bg-transparent  sm:h-20 sm:cursor-pointer"
         onClick={() => setCurrentLayer("bot")}
       ></div>
     </div>
