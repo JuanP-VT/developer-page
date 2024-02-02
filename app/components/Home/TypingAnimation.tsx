@@ -4,18 +4,29 @@
  */
 "use client";
 import Typed from "typed.js";
-import { useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
+import { LanguageContext } from "@/app/page";
 function TypingAnimation() {
+  const languageContext = useContext(LanguageContext);
   const typing = useRef(null);
   useEffect(() => {
     if (typing.current) {
+      //For English
       const typed = new Typed(typing.current, {
-        strings: [
-          "Passionate Web Developer",
-          "Dedicated Self Learner",
-          "Chill dude",
-          "Proven Industrial Engineer",
-        ], // Speed settings
+        strings:
+          languageContext === "en"
+            ? [
+                "Passionate Web Developer",
+                "Dedicated Self Learner",
+                "Chill dude",
+                "Proven Industrial Engineer",
+              ]
+            : [
+                "Desarrollador web apasionado",
+                "Autodidacta dedicado",
+                "Disciplinado",
+                "Ingeniero industrial",
+              ], // Speed settings
         startDelay: 300,
         typeSpeed: 40,
         backSpeed: 30,
@@ -28,7 +39,7 @@ function TypingAnimation() {
         typed.destroy();
       };
     }
-  }, []);
+  }, [languageContext]);
   return (
     <div>
       <span

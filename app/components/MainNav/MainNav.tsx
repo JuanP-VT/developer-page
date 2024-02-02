@@ -12,9 +12,14 @@
  * @returns {JSX.Element} JSX element representing the main navigation bar of the application.
  */
 "use client";
-import { useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import LanguageButton from "./LanguageButton";
 
-function MainNav() {
+type Props = {
+  currentLanguage: "es" | "en";
+  setCurrentLanguage: Dispatch<SetStateAction<"es" | "en">>;
+};
+function MainNav({ currentLanguage, setCurrentLanguage }: Props) {
   const [currentY, setCurrentY] = useState(0);
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -34,6 +39,10 @@ function MainNav() {
          currentY > 50 ? "bg-teal-700" : "bg-black transition-all duration-300"
        } p-1 text-xs shadow-2xl sm:justify-end sm:text-base`}
     >
+      <LanguageButton
+        currentLanguage={currentLanguage}
+        setCurrentLanguage={setCurrentLanguage}
+      />
       <a href="#Home" className="font-medium text-white hover:text-sky-300">
         Home
       </a>

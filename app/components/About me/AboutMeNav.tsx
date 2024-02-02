@@ -12,6 +12,9 @@
  * @returns {JSX.Element} JSX element representing the navigation bar for the About Me section.
  */
 
+import { LanguageContext } from "@/app/page";
+import { useContext } from "react";
+
 type Props = {
   setCurrentSection: React.Dispatch<
     React.SetStateAction<"hobbies" | "background">
@@ -20,6 +23,8 @@ type Props = {
 };
 
 function AboutMeNav({ currentSection, setCurrentSection }: Props) {
+  const languageContext = useContext(LanguageContext);
+
   return (
     <div className="absolute top-0 mt-7 flex w-full gap-3 rounded-lg bg-sky-900 p-2 px-5 text-gray-300">
       <button
@@ -28,7 +33,7 @@ function AboutMeNav({ currentSection, setCurrentSection }: Props) {
         }  text-xs sm:text-base`}
         onClick={() => setCurrentSection("hobbies")}
       >
-        Hobbies
+        {languageContext === "en" ? "Hobbies" : "Pasatiempos"}
       </button>
       <button
         className={`rounded-lg  p-2 sm:px-10 ${
@@ -36,7 +41,9 @@ function AboutMeNav({ currentSection, setCurrentSection }: Props) {
         }  text-xs sm:text-base`}
         onClick={() => setCurrentSection("background")}
       >
-        Professional Background
+        {languageContext === "en"
+          ? "¿Industrial Engineer? "
+          : "¿Ingeniero Industrial?"}
       </button>
     </div>
   );

@@ -18,8 +18,9 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { list } from "./bgList";
 import TechIcon from "../../Tech stack/TechIcon";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Link from "next/link";
+import { LanguageContext } from "@/app/page";
 
 type Props = {
   src: string;
@@ -41,6 +42,7 @@ function SmallProjectCard({
   demo,
   objectives,
 }: Props) {
+  const languageContext = useContext(LanguageContext);
   const [currentBg, setCurrentBg] = useState("");
   //Creates an interval that will pick a random number and select a background color for the component from a list of tailwind utility classes
   useEffect(() => {
@@ -62,7 +64,7 @@ function SmallProjectCard({
 
   return (
     <div
-      className={`flex w-full flex-col items-center rounded-lg ${currentBg} border-2 p-3 shadow-md sm:max-w-md`}
+      className={`flex w-full flex-col  items-center rounded-lg ${currentBg} border-2 p-3 shadow-md sm:max-w-md`}
     >
       <div className="flex w-full flex-col justify-center">
         <p className="my-2 ml-2 text-2xl font-medium">{name}</p>
@@ -82,13 +84,17 @@ function SmallProjectCard({
               onClick={() => setActiveContent("tech")}
               className="rounded-md bg-gray-700 px-4 py-2 text-sm  text-white transition duration-300 ease-in-out hover:bg-gray-900"
             >
-              Techs Used
+              {languageContext === "en"
+                ? "Techs Used"
+                : "Tecnologías Utilizadas"}
             </button>
             <button
               onClick={() => setActiveContent("focus")}
               className="rounded-md bg-gray-700 px-4 py-2 text-sm text-white transition duration-300 ease-in-out hover:bg-gray-900"
             >
-              Learning Focus
+              {languageContext === "en"
+                ? "Learning Focus"
+                : "Objetivo De Aprendizaje"}
             </button>
           </div>
           <div className="relative mt-3 flex h-56 ">
@@ -97,7 +103,9 @@ function SmallProjectCard({
                 activeContent === "tech" ? "opacity-100" : "opacity-0"
               }`}
             >
-              <p className="text-center text-xl  font-medium">Technologies</p>
+              <p className="text-center text-xl  font-medium">
+                {languageContext === "en" ? "Techs" : "Tecnologías"}
+              </p>
               <div className="mt-1 grid grid-cols-3 items-center justify-center gap-y-1 sm:grid-cols-4">
                 {techs.map((tech, i) => (
                   <TechIcon key={`prjTech${i}`} name={tech} />
@@ -109,7 +117,10 @@ function SmallProjectCard({
                 activeContent === "focus" ? "opacity-100" : "opacity-0"
               }`}
             >
-              <p className="font-medium">Focus</p>
+              <p className="font-medium">
+                {" "}
+                {languageContext === "en" ? "Focus" : "Objetivo"}
+              </p>
               <ul className={`grid max-w-md grid-cols-1 space-y-1  `}>
                 {objectives.map((objetive, i) => (
                   <li className="ml-3 mr-2" key={`ft${i}`}>
@@ -129,7 +140,10 @@ function SmallProjectCard({
           >
             <FontAwesomeIcon icon={faGithub} className="h-5 w-5 p-2 " />
 
-            <p className="flex items-center font-medium">Code</p>
+            <p className="flex items-center font-medium">
+              {" "}
+              {languageContext === "en" ? "Code" : "Código"}
+            </p>
           </Link>
 
           <Link
@@ -137,7 +151,10 @@ function SmallProjectCard({
             href={demo}
           >
             <FontAwesomeIcon icon={faLink} className="h-5 w-5 p-2 " />
-            <p className="flex items-center font-medium">Site</p>
+            <p className="flex items-center font-medium">
+              {" "}
+              {languageContext === "en" ? "Site" : "Sitio"}
+            </p>
           </Link>
         </div>
       </div>

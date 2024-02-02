@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { Dispatch, SetStateAction, useState } from "react";
 
 import Image from "next/image";
-type Props = {};
+type Props = {
+  currentLanguage: "es" | "en";
+  setCurrentLanguage: Dispatch<SetStateAction<"es" | "en">>;
+};
 
-export default function LanguageButton({}: Props) {
-  const [currentLanguage, setCurrentLanguage] = useState<"es" | "en">("en");
+export default function LanguageButton({
+  currentLanguage,
+  setCurrentLanguage,
+}: Props) {
   return (
     <div
       className=" border-grey-500 relative flex cursor-pointer gap-3 rounded-full border  "
