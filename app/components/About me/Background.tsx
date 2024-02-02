@@ -12,7 +12,7 @@
 
 import { useContext } from "react";
 import IESkill from "./IESkill";
-import { LanguageContext } from "@/app/page";
+import { LanguageContext } from "@/app/languageContext";
 
 function Background() {
   const languageContext = useContext(LanguageContext);

@@ -20,7 +20,7 @@ import TechIcon from "../../Tech stack/TechIcon";
 import Image from "next/image";
 import { useContext, useEffect, useState } from "react";
 import Link from "next/link";
-import { LanguageContext } from "@/app/page";
+import { LanguageContext } from "@/app/languageContext";
 
 type Props = {
   src: string;

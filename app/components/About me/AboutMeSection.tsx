@@ -15,7 +15,7 @@ import Hobbies from "./Hobbies";
 import AboutMeNav from "./AboutMeNav";
 import Background from "./Background";
 import { faMailBulk, faMapLocation } from "@fortawesome/free-solid-svg-icons";
-import { LanguageContext } from "@/app/page";
+import { LanguageContext } from "@/app/languageContext";
 
 function AboutMeSection() {
   const [currentSection, setCurrentSection] = useState<

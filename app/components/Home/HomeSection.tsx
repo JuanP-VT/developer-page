@@ -3,7 +3,7 @@ import TypingAnimation from "./TypingAnimation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { useContext } from "react";
-import { LanguageContext } from "@/app/page";
+import { LanguageContext } from "@/app/languageContext";
 
 function HomeSection() {
   //Static content

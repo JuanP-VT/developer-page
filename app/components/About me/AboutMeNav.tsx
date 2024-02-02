@@ -12,9 +12,8 @@
  * @returns {JSX.Element} JSX element representing the navigation bar for the About Me section.
  */
 
-import { LanguageContext } from "@/app/page";
 import { useContext } from "react";
-
+import { LanguageContext } from "@/app/languageContext";
 type Props = {
   setCurrentSection: React.Dispatch<
     React.SetStateAction<"hobbies" | "background">

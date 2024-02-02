@@ -6,7 +6,7 @@
  */
 import { useContext } from "react";
 import SmallProjectCard from "./Project cards/SmallProjectCard";
-import { LanguageContext } from "@/app/page";
+import { LanguageContext } from "@/app/languageContext";
 
 function ChronologicalOrdered() {
   const languageContext = useContext(LanguageContext);

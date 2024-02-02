@@ -5,8 +5,8 @@ import HomeSection from "./components/Home/HomeSection";
 import MainNav from "./components/MainNav/MainNav";
 import ProjectsSection from "./components/Projects/ProjectsSection";
 import TechStackSection from "./components/Tech stack/TechStackSection";
+import { LanguageContext } from "./languageContext";
 
-export const LanguageContext = createContext<"es" | "en">("en");
 export default function Home() {
   const [currentLanguage, setCurrentLanguage] = useState<"es" | "en">("en");
   return (

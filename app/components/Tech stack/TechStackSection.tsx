@@ -12,7 +12,7 @@
 import { useContext, useState } from "react";
 import BurgerControls from "./BurgerControls";
 import TechStack from "./TechStack";
-import { LanguageContext } from "@/app/page";
+import { LanguageContext } from "@/app/languageContext";
 function TechStackSection() {
   const languageContext = useContext(LanguageContext);
   const [currentLayer, setCurrentLayer] = useState<"top" | "mid" | "bot">(

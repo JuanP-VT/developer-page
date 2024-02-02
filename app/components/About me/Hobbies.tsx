@@ -11,7 +11,7 @@
  */
 import { useContext } from "react";
 import HobbyCard from "./HobbyCard";
-import { LanguageContext } from "@/app/page";
+import { LanguageContext } from "@/app/languageContext";
 
 function Hobbies() {
   const languageContext = useContext(LanguageContext);

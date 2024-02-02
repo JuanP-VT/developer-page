@@ -5,7 +5,7 @@
  * @returns {JSX.Element} The JSX element representing the ProjectsSection component.
  */
 "use client";
-import { LanguageContext } from "@/app/page";
+import { LanguageContext } from "@/app/languageContext";
 import ChronologicalOrdered from "./ChronologicalOrdered";
 import HighlightCard from "./Project cards/HighlightCard";
 import { useContext } from "react";

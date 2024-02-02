@@ -5,7 +5,7 @@
 "use client";
 import Typed from "typed.js";
 import { useContext, useEffect, useRef } from "react";
-import { LanguageContext } from "@/app/page";
+import { LanguageContext } from "@/app/languageContext";
 function TypingAnimation() {
   const languageContext = useContext(LanguageContext);
   const typing = useRef(null);
