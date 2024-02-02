@@ -9,7 +9,6 @@ import TechStackSection from "./components/Tech stack/TechStackSection";
 export const LanguageContext = createContext<"es" | "en">("en");
 export default function Home() {
   const [currentLanguage, setCurrentLanguage] = useState<"es" | "en">("en");
-  console.log(currentLanguage);
   return (
     <main className="relative">
       <LanguageContext.Provider value={currentLanguage}>
