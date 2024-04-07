@@ -25,8 +25,28 @@ function ProjectsSection() {
       </p>
       <div className="flex flex-col items-center justify-center p-1 sm:gap-20 xl:flex-row">
         <HighlightCard
+          imageSrc="/projects-photos/18-RegisYGaelStudio.png"
+          projectName="Regina & Gael Studio - Freelance Project"
+          description={
+            languageContext === "en"
+              ? "Developed a personalized, cost-effective ecommerce platform using React, TailwindCSS, NextJS, and MongoDB, prioritizing low operating costs, scalability, and security via AWS Amplify, Amazon S3, and CloudFront. Implemented robust security measures, including OAuth authentication, secure API routes, and strict input validation, to safeguard sensitive data and enhance performance."
+              : "Desarrollé una plataforma de comercio electrónico personalizada y rentable utilizando React, TailwindCSS, NextJS y MongoDB, priorizando costos operativos bajos, escalabilidad y seguridad a través de AWS Amplify, Amazon S3 y CloudFront. Implementé medidas de seguridad robustas, incluida la autenticación de OAuth, rutas de API seguras y una estricta validación de entrada, para salvaguardar datos sensibles y mejorar el rendimiento."
+          }
+          techs={[
+            "typescript",
+            "react",
+            "nextjs",
+            "tailwindcss",
+            "jest",
+            "git",
+            "github",
+            "aws",
+          ]}
+          demo="https://reginaygaelstudio.com/"
+        />
+        <HighlightCard
           imageSrc="/projects-photos/17-Temazcal.png"
-          projectName="Temazcal Website"
+          projectName="Temazcal Website - Freelance Project"
           description={
             languageContext === "en"
               ? "Developed a responsive website for a local business. The project involved crafting an eye-catching design, a blog system, a FAQ section, an image gallery, and contact. I also integrated the website with a Map Api and Contentful CMS.Clients were very happy with my work"
@@ -45,7 +65,7 @@ function ProjectsSection() {
           demo="https://temazcalmochis.com"
         />
         <HighlightCard
-          projectName="Pc Hub - Ecommerce App"
+          projectName="Pc Hub - Ecommerce App - Personal Project"
           imageSrc="/projects-photos/16-Ecommerce2.png"
           description={
             languageContext === "en"
