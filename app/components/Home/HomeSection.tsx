@@ -30,12 +30,12 @@ function HomeSection() {
           {languageContext === "en" && (
             <p className="px-8  md:text-lg lg:pl-16  2xl:pr-40">
               Hello, my name is{" "}
-              <span className="font-medium text-orange-500">
+              <span className="font-medium text-orange-700">
                 Juan Pablo Valdez
               </span>
               , I am a programmer and industrial engineer with a passion for{" "}
-              <span className="font-medium text-orange-500">ReactJS</span> and{" "}
-              <span className="font-medium text-orange-500">NodeJS</span>{" "}
+              <span className="font-medium text-orange-700">ReactJS</span> and{" "}
+              <span className="font-medium text-orange-700">NodeJS</span>{" "}
               development. I believe in the transformative power of love and
               determination in achieving remarkable results throughout my web
               development journey! 💪
@@ -44,13 +44,13 @@ function HomeSection() {
           {languageContext === "es" && (
             <p className="px-8  md:text-lg lg:pl-16  2xl:pr-40">
               Hola, my nombre es{" "}
-              <span className="font-medium text-orange-500">
+              <span className="font-medium text-orange-700">
                 Juan Pablo Valdez
               </span>
               , soy programador e ingeniero industrial apasionado por el
               desarrollo en{" "}
-              <span className="font-medium text-orange-500">ReactJS</span> y{" "}
-              <span className="font-medium text-orange-500">NodeJS</span>.
+              <span className="font-medium text-orange-700">ReactJS</span> y
+              <span className="font-medium text-orange-700"> NodeJS</span>.
               Confío plenamente en que el amor por lo que hago y la
               determinación son la clave para llegar lejos en el mundo.
             </p>
