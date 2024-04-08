@@ -61,7 +61,7 @@ function TechStack({ currentLayer }: Props) {
         }`}
       >
         <TechList
-          techs={["jest", "git", "github", "vscode", "vercel", "heroku"]}
+          techs={["jest", "git", "github", "vscode", "vercel", "heroku", "aws"]}
           title="Tools"
         />
       </div>

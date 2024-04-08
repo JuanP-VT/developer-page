@@ -10,7 +10,7 @@ import { LanguageContext } from "./languageContext";
 export default function Home() {
   const [currentLanguage, setCurrentLanguage] = useState<"es" | "en">("en");
   return (
-    <main className="relative">
+    <main className="overflow-hidden bg-gradient-to-r from-slate-900 via-slate-700 to-slate-800">
       <LanguageContext.Provider value={currentLanguage}>
         <MainNav
           currentLanguage={currentLanguage}
@@ -18,7 +18,9 @@ export default function Home() {
         />
         <HomeSection />
         <TechStackSection />
+
         <ProjectsSection />
+
         <AboutMeSection />
       </LanguageContext.Provider>
     </main>

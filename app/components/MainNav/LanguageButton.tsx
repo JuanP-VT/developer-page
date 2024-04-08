@@ -12,11 +12,11 @@ export default function LanguageButton({
 }: Props) {
   return (
     <div
-      className=" border-grey-500 relative flex cursor-pointer gap-3 rounded-full border  "
+      className=" relative flex cursor-pointer gap-3 rounded-full border border-gray-700  "
       onClick={() => setCurrentLanguage(currentLanguage === "es" ? "en" : "es")}
     >
       <button
-        className={`absolute  h-4 w-4  rounded-full border-2 border-slate-500 bg-white transition-all duration-300 sm:h-6 sm:w-6 ${
+        className={`absolute  h-4 w-4  rounded-full border-2 border-slate-500 bg-teal-300 transition-all duration-300 sm:h-6 sm:w-6 ${
           currentLanguage === "en" ? "translate-x-7 sm:translate-x-9" : ""
         }`}
       ></button>
