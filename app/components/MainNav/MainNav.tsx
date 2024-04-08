@@ -34,7 +34,7 @@ function MainNav({ currentLanguage, setCurrentLanguage }: Props) {
   };
   return (
     <div
-      className={`fixed top-0 z-20 flex w-full justify-center gap-3 self-center rounded-b-lg
+      className={`fixed top-0 z-50 flex w-full justify-center gap-3 self-center rounded-b-lg
        ${
          currentY > 50 ? "bg-sky-800" : "bg-black transition-all duration-300"
        } p-1 text-xs shadow-2xl sm:justify-end sm:text-base`}
