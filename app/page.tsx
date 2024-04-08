@@ -6,12 +6,11 @@ import MainNav from "./components/MainNav/MainNav";
 import ProjectsSection from "./components/Projects/ProjectsSection";
 import TechStackSection from "./components/Tech stack/TechStackSection";
 import { LanguageContext } from "./languageContext";
-import { TracingBeam } from "./components/TracingBeam";
 
 export default function Home() {
   const [currentLanguage, setCurrentLanguage] = useState<"es" | "en">("en");
   return (
-    <main className="relative">
+    <main className="overflow-hidden">
       <LanguageContext.Provider value={currentLanguage}>
         <MainNav
           currentLanguage={currentLanguage}
@@ -19,9 +18,9 @@ export default function Home() {
         />
         <HomeSection />
         <TechStackSection />
-        <TracingBeam>
-          <ProjectsSection />
-        </TracingBeam>
+
+        <ProjectsSection />
+
         <AboutMeSection />
       </LanguageContext.Provider>
     </main>
