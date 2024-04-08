@@ -23,27 +23,29 @@ function ProjectsSection() {
       <p className="py-3  text-2xl italic text-white sm:text-4xl">
         {languageContext === "en" ? "🌟Highlight🌟" : "🌟Destacados🌟"}
       </p>
-      <div className="flex flex-col items-center justify-center p-1 sm:gap-20 xl:flex-row">
-        <HighlightCard
-          imageSrc="/projects-photos/18-RegisYGaelStudio.png"
-          projectName="Regina & Gael Studio - Freelance Project"
-          description={
-            languageContext === "en"
-              ? "Developed a personalized, cost-effective ecommerce platform using React, TailwindCSS, NextJS, and MongoDB, prioritizing low operating costs, scalability, and security via AWS Amplify, Amazon S3, and CloudFront. Implemented robust security measures, including OAuth authentication, secure API routes, and strict input validation, to safeguard sensitive data and enhance performance."
-              : "Desarrollé una plataforma de comercio electrónico personalizada y rentable utilizando React, TailwindCSS, NextJS y MongoDB, priorizando costos operativos bajos, escalabilidad y seguridad a través de AWS Amplify, Amazon S3 y CloudFront. Implementé medidas de seguridad robustas, incluida la autenticación de OAuth, rutas de API seguras y una estricta validación de entrada, para salvaguardar datos sensibles y mejorar el rendimiento."
-          }
-          techs={[
-            "typescript",
-            "react",
-            "nextjs",
-            "tailwindcss",
-            "jest",
-            "git",
-            "github",
-            "aws",
-          ]}
-          demo="https://reginaygaelstudio.com/"
-        />
+      <div className="grid items-center justify-center p-1   sm:gap-20  lg:grid-cols-2 xl:flex-row">
+        <div className="col-span-1  ">
+          <HighlightCard
+            imageSrc="/projects-photos/18-RegisYGaelStudio.png"
+            projectName="Regina & Gael Studio - Freelance Project"
+            description={
+              languageContext === "en"
+                ? "Developed a personalized, cost-effective ecommerce platform using React, TailwindCSS, NextJS, and MongoDB, prioritizing low operating costs, scalability, and security via AWS Amplify, Amazon S3, and CloudFront. Implemented robust security measures, including OAuth authentication, secure API routes, and strict input validation, to safeguard sensitive data and enhance performance."
+                : "Desarrollé una plataforma de comercio electrónico personalizada y rentable utilizando React, TailwindCSS, NextJS y MongoDB, priorizando costos operativos bajos, escalabilidad y seguridad a través de AWS Amplify, Amazon S3 y CloudFront. Implementé medidas de seguridad robustas, incluida la autenticación de OAuth, rutas de API seguras y una estricta validación de entrada, para salvaguardar datos sensibles y mejorar el rendimiento."
+            }
+            techs={[
+              "typescript",
+              "react",
+              "nextjs",
+              "tailwindcss",
+              "jest",
+              "git",
+              "github",
+              "aws",
+            ]}
+            demo="https://reginaygaelstudio.com/"
+          />
+        </div>
         <HighlightCard
           imageSrc="/projects-photos/17-Temazcal.png"
           projectName="Temazcal Website - Freelance Project"
