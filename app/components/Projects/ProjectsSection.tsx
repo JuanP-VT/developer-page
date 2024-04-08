@@ -45,7 +45,7 @@ function ProjectsSection() {
                 "github",
                 "aws",
               ]}
-              demo="https://reginaygaelstudio.com/"
+              demo="https://www.reginaygaelstudio.com/"
             />
           </div>
           <HighlightCard
@@ -94,13 +94,13 @@ function ProjectsSection() {
         <div className="flex flex-col p-2">
           <p className="py-5 text-center text-5xl text-white sm:text-start">
             {languageContext === "en"
-              ? " Student Journey 🚀"
-              : "Portafolio De Estudiante 🚀"}
+              ? " The Odin Project Portfolio 🚀"
+              : "Portafolio De El Odin Project 🚀"}
           </p>
           <p className="font-medium text-white sm:text-lg xl:w-270">
             {languageContext === "en"
-              ? "¡Witness the seeds of a web developer blossom! This student portfolio showcases my unwavering pursuit of excellence in web development. From         basic front-end foundations to conquering Javascript intricacies, each         project marks a chapter in my learning journey. Join me as I unlock         new skills and refine my craft, one line of code at a time."
-              : "¡Sé testigo de cómo una semilla de desarrollador web florece! Este portafolio estudiantil muestra mi constante búsqueda de la excelencia en el desarrollo web. Desde los fundamentos básicos del front-end hasta conquistar las complejidades de Javascript, cada proyecto marca un capítulo en mi aprendizaje. Acompáñame mientras desbloqueo nuevas habilidades y refino mi arte, línea de código por línea."}
+              ? " I learned to code with The Odin Project, a open source resource that teaches web development. I started with the basics of HTML, CSS, and JavaScript, and gradually moved on to more complex projects. I like to display my projects in chronological order to show my progress and growth as a developer. I am constantly learning and improving my skills, thanks to this I could start freelancing."
+              : " Aprendí a programar con The Odin Project, un recurso de código abierto que enseña desarrollo web. Comencé con los conceptos básicos de HTML, CSS y JavaScript, y gradualmente pasé a proyectos más complejos. Me gusta mostrar mis proyectos en orden cronológico para mostrar mi progreso y crecimiento como desarrollador. ¡Estoy constantemente aprendiendo y mejorando mis habilidades, gracias a esto pude comenzar a trabajar como freelancer."}
           </p>
         </div>
         <ChronologicalOrdered />
