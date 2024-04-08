@@ -14,7 +14,7 @@ function ProjectsSection() {
   return (
     <section
       id="Projects"
-      className="flex  flex-col justify-center bg-black pb-20 sm:p-10 "
+      className="flex  flex-col justify-center bg-gradient-to-r from-slate-900 via-slate-600 to-slate-800 pb-20 sm:p-10 "
     >
       <p className=" mt-6 text-center text-5xl text-white antialiased sm:text-start sm:text-6xl ">
         {" "}
