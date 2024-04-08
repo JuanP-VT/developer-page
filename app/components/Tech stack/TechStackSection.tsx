@@ -19,7 +19,7 @@ function TechStackSection() {
     "top",
   );
   return (
-    <div className="relative flex h-[50rem] w-full  items-center justify-center bg-sky-200 bg-grid-black/[0.2] ">
+    <div className="relative flex h-[50rem] min-h-screen  w-full items-center justify-center bg-sky-200 bg-grid-black/[0.2] ">
       {/* Radial gradient for the container to give a faded look */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-600 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <div className="relative z-20 bg-gradient-to-b from-slate-700 to-slate-800 bg-clip-text py-8 text-4xl font-bold text-transparent sm:text-7xl">
