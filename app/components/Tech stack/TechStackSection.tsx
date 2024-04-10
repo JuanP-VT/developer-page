@@ -22,19 +22,19 @@ function TechStackSection() {
     <div className="relative flex h-[50rem] min-h-screen  w-full items-center justify-center bg-sky-200 bg-grid-black/[0.2] ">
       {/* Radial gradient for the container to give a faded look */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-600 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-      <div className="relative z-20 bg-gradient-to-b from-slate-700 to-slate-800 bg-clip-text py-8 text-4xl font-bold text-transparent sm:text-7xl">
+      <div className="relative z-20 bg-gradient-to-b from-slate-700 to-slate-800 bg-clip-text py-8  font-bold text-transparent ">
         <section id="Tech" className="">
-          <div className="pt-20 text-center text-4xl font-medium sm:text-5xl">
+          <div className=" text-center text-3xl font-medium ">
             {languageContext === "en"
               ? "My Tech Stack"
               : "Mi Stack Tecnológico"}
           </div>
-          <span className="mb-20 ">
+          <p className="mb-10 text-center">
             {languageContext === "en"
               ? "Click The Burger!"
-              : "Click a la Hamburguesa!"}
+              : "Da Click a la Hamburguesa!"}
             !
-          </span>
+          </p>
           <div className="mb-5 flex w-full flex-col items-center justify-center sm:flex-row">
             <BurgerControls
               setCurrentLayer={setCurrentLayer}

@@ -19,7 +19,7 @@ type Props = {
 function TechList({ techs, title }: Props) {
   return (
     <div className="flex flex-col px-2">
-      <p className="pb-2 text-2xl font-medium">{title}</p>
+      <p className="pb-2 text-2xl font-medium text-slate-700">{title}</p>
       <div className="grid grid-cols-3 justify-center gap-y-5">
         {techs.map((tech, i) => (
           <TechIcon name={tech} key={`tech${i}`} />
